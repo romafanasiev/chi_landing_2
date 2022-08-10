@@ -1,0 +1,35 @@
+{
+  "name": "chi_landing_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint '**/*.js'",
+    "lint:css": "npx stylelint '**/*.scss'",
+    "lint:html": "linthtml --config ./node_modules/@mate-academy/linthtml-config/.linthtmlrc.json src/*.html",
+    "sass": "sass --watch ./src/styles/main.scss:./src/main.css",
+    "deploy": "gulp build && gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romafanasiev/chi_landing_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romafanasiev/chi_landing_2/issues"
+  },
+  "homepage": "https://github.com/romafanasiev/chi_landing_2#readme",
+  "dependencies": {
+    "sass": "^1.54.3"
+  },
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.8.6",
+    "@mate-academy/linthtml-config": "^0.0.2",
+    "@mate-academy/stylelint-config": "^0.0.9",
+    "gulp": "^4.0.2",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0"
+  }
+}

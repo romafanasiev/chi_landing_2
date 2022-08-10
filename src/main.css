@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/euclidCircularARegular.ttf") format("ttf");
+}
+.bold {
+  font-weight: 600;
+}
+
+a {
+  transition-duration: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+  margin: 0;
+  padding: 0;
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+/*# sourceMappingURL=main.css.map */
