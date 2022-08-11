@@ -1,6 +1,18 @@
 @import "./utils";
 @import "./typography";
 
+@import "./blocks/wrapper";
+@import "./blocks/header";
+@import "./blocks/icon";
+@import "./blocks/modals";
+@import "./blocks/modal-item";
+@import "./blocks/link";
+@import "./blocks/contact";
+@import "./blocks/socials";
+@import "./blocks/hero.scss";
+@import "./blocks/label";
+@import "./blocks/textLink";
+
 a {
   transition-duration: 0.3s;
 }
@@ -12,8 +24,8 @@ a {
   margin: 0;
   padding: 0;
 
+  color: $blackColor;
   font-family: "Euclid Circular A", sans-serif;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.5em;
 }

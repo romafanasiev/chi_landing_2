@@ -1,0 +1,15 @@
+.hero {
+  height: 2000px;
+  position: relative;
+  top: -$headerHeight*2;
+
+  background-image: url("./images/heroBackground.svg");
+  background-position: top -58% center;
+  background-size: 1404px 1404px;
+  background-repeat: no-repeat;
+
+  @include onDesktop {
+    background-position: top -1075px left -730px;
+    background-size: 2262px 2262px;
+  }
+}

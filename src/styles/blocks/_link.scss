@@ -1,0 +1,29 @@
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  width: 222px;
+
+  background-color: $whiteColor;
+  border: 2px solid $redColor;
+  border-radius: 30px;
+
+  color: $blackColor;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: $smallFont;
+  line-height: 0.8;
+  letter-spacing: 0.05em;
+
+  &:hover {
+    transform: scale($buttonsScale);
+  }
+
+  &--second {
+    background-color: $redColor;
+    color: $whiteColor;
+  }
+}
