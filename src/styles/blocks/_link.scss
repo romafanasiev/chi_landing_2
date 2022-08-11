@@ -22,8 +22,21 @@
     transform: scale($buttonsScale);
   }
 
+  &--small{
+    width: 156px;
+  }
+
   &--second {
     background-color: $redColor;
     color: $whiteColor;
+  }
+
+  &--header {
+    background-color: rgba(255, 255, 255, 0.0);
+    border-color: $whiteColor;
+    color: $whiteColor;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1em;
   }
 }
