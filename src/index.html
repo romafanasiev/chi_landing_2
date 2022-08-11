@@ -65,12 +65,12 @@
       </div>
     </header>
 
-    <main>
+    <main class="page">
       <div class="modals">
         <div class="modal-item" id="geo">
           <h3 class="modal-item__title">Киев, ул. Вадима Гетьмана, 6, ТРЦ Cosmo Multimall,
             Блок A, 2-ой этаж</h3>
-          <p class="modal-item__metro">Шулявська — 400м</p>
+          <p class="metro">Шулявська — 400м</p>
           <p class="modal-item__text">ВРЕМЯ РАБОТЫ</p>
           <img
             src="./images/location.jpg"
@@ -336,11 +336,102 @@
 
       <div class="wrapper">
         <section class="hero">
+          <p class="hero__location bold">Мы находимся в Cosmo Multimall</p>
+          <p class="hero__metro">Шулявська — 400м</p>
+          <h1 class="hero__title">
+            VR-клуб «Anvio»
+            <br>
+            <span class="hero__subtitle">парк цифровых развлечений для всей семьи</span>
+          </h1>
+          <div class="hero__info">
+            <p class="hero__img">
+              <span class="hero__img--text">
+                Площадь парка
+                <br>
+                2100 м²
+              </span>
+            </p>
+            <p class="hero__img hero__img--team">
+              <span class="hero__img--text">
+                Командные
+                <br>
+                игры
+              </span>
+            </p>
+            <p class="hero__img hero__img--freedom">
+              <span class="hero__img--text">
+                Свобода
+                <br>
+                передвижений
+              </span>
+            </p>
+          </div>
+          <div class="hero__links">
+            <a href="#" class="link link--small">КУПИТЬ БИЛЕТ </a>
+            <a href="#" class="link link--header">Заказать праздник</a>
+          </div>
 
+          <div class="hero__slider slider" data-id="slider1">
+            <button
+              class="slider__button slider__button--back"
+              data-id="slider1"
+              data-type="sliderButton"
+            ></button>
+            <div class="slider__items">
+              <div class="slider__item slider__item--active">
+                <div class="discount">
+                  <p class="bold">скидка 50%</p>
+                  <p>на второй сеанс</p>
+                  <a href="#" class="link link--header">Получить скидку</a>
+                </div>
+              </div>
+              
+              <div class="slider__item">
+                <div class="discount discount--party">
+                  <p class="bold">День рождения</p>
+                  <p>от 1490 ₴</p>
+                  <a href="#" class="link link--header">рассчитать стоимость</a>
+                </div>
+              </div>
+
+              <div class="slider__item">
+                <div class="discount discount--people">
+                  <p class="bold">Командный бонус</p>
+                  <p>1000 ₴</p>
+                  <a href="#" class="link link--header">Забрать бонус</a>
+                </div>
+              </div>
+            </div>
+            <button
+              class="slider__button"
+              data-id="slider1"
+              data-type="sliderButton"
+            ></button>
+          </div>
+          <div class="slider__slides-order" data-id="slider1Nav">
+            <div class="slider__slide-number slider__slide-number--active"></div>
+            <div class="slider__slide-number"></div>
+            <div class="slider__slide-number"></div>
+          </div>
+          <div class="hero__gameplay">
+            <img
+            src="./images/hero/game.jpg"
+            alt="People playing VR games"
+            class="hero__gameplay"
+            >
+          </div>
+
+          <div class="hero__address">
+            <img
+              src="./images/hero/cosmo.png"
+              alt="Logo Cosmo multimall"
+              class="hero__address-image"
+            >
+            <p class="hero__address-title bold">В центре Киева</p>
+            <p class="metro">Шулявська — 400м</p>
+          </div>
         </section>
       </div>
-
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque unde possimus, a dolor animi laboriosam quia hic, nobis ratione sequi laudantium voluptatum nulla quidem ullam amet iusto tenetur, vero numquam!</p>
     </main>
     <footer></footer>
     <script src="./scripts/main.js"></script>

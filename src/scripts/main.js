@@ -80,4 +80,46 @@ selection.forEach((label) => {
   });
 });
 
+const sliderButtons = document.querySelectorAll('button[data-type="sliderButton"]');
 
+let count = 0;
+let prev;
+
+sliderButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = e.target.getAttribute("data-id");
+    const slider = document.querySelector(`div[data-id=${id}]`);
+    const visualisation = document.querySelector(`div[data-id=${id}Nav]`);
+    const items = slider.querySelectorAll('.slider__item');
+    let visualisationItems;
+    const classNames = e.target.classList.value;
+
+    if (classNames.includes('slider__button--back')) {
+      if (count - 1 >= 0) {
+        prev = count;
+        count -= 1;
+      } else {
+        prev = 0;
+        count = items.length - 1;
+      }
+    } else {
+      if (count + 1 > items.length - 1) {
+        prev = items.length - 1;
+        count = 0;
+      } else {
+        prev = count;
+        count += 1;
+      }
+    };
+
+    if (visualisation !== null) {
+      visualisationItems= visualisation.querySelectorAll('.slider__slide-number');
+      visualisationItems[prev].classList.remove("slider__slide-number--active");
+      visualisationItems[count].classList.add("slider__slide-number--active");
+    };
+
+    items[prev].classList.remove("slider__item--active");
+    items[count].classList.add("slider__item--active");
+  });
+});
