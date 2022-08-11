@@ -1,0 +1,56 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  &__item {
+    height: 30px;
+    width: 30px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    &--telegram {
+      background-image: url("./images/icons/telegram.svg");
+    }
+
+    &--whatsup {
+      background-image: url("./images/icons/watsapp.svg");
+    }
+
+    &--facebook {
+      background-image: url("./images/icons/facebook.svg");
+    }
+
+    &--tiktok {
+      background-image: url("./images/icons/tiktok.svg");
+    }
+
+    &--youtube {
+      background-image: url("./images/icons/youtube.svg");
+    }
+
+    &:hover {
+      transform: scale($iconsScale);
+    }
+  }
+
+  &__link {
+    height: 30px;
+    width: 30px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
+
+    &--telegram {
+      background-image: url("./images/icons/telegram.svg");
+    }
+  }
+}

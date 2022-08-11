@@ -5,11 +5,344 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <title>Document</title>
+    <title>Anvio</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__content">
+          <a href="#">
+            <img
+              src="./images/logo.svg"
+              alt="Anvio company logo"
+              class="header__logo"
+            >
+          </a>
+
+          <nav class="header__nav">
+            <a
+              href="#"
+              class="icon icon--geo"
+              data-type="headerNav"
+              data-id="geo"
+              data-link="geo"
+            ></a>
+            <a href="tel:+380672963030" class="icon icon--phone" target="_blank"></a>
+            <a
+              href="#"
+              class="icon icon--menu"
+              data-type="headerNav"
+              data-id="menu"
+              data-link="menu"
+            ></a>
+          </nav>
+
+          <ul class="header__list">
+            <li class="label">
+              <a href="#" class="text-link">Развлечения</a>
+            </li>
+            <li>
+              <a href="#" class="text-link">Эмоции</a>
+            </li>
+            <li class="label">
+              <a href="#" class="text-link">мероприятия</a>
+            </li>
+            <li>
+              <a href="#" class="text-link">отзывы</a>
+            </li>
+          </ul>
+
+          <div class="header__tickets">
+            <a href="#" class="link link--second">КУПИТЬ БИЛЕТ</a>
+          </div>
+          <div class="header__actions">
+            <a href="tel:+380672963030" target="_blank" class="text-link">+38 (067) 296-30-30</a>
+            <label for="" class="label">КИЕВ</label>
+            <a href="#" class="text-link">ВОЙТИ</a>
+            <label for="" class="label">UA</label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="modals">
+        <div class="modal-item" id="geo">
+          <h3 class="modal-item__title">Киев, ул. Вадима Гетьмана, 6, ТРЦ Cosmo Multimall,
+            Блок A, 2-ой этаж</h3>
+          <p class="modal-item__metro">Шулявська — 400м</p>
+          <p class="modal-item__text">ВРЕМЯ РАБОТЫ</p>
+          <img
+            src="./images/location.jpg"
+            alt="location near underground station Shulyavska"
+            class="modal-item__img"
+          >
+          <p class="modal-item__text">Как добраться</p>
+          <ul class="modal-item__links">
+            <li>
+              <a
+                href="https://goo.gl/maps/FjnQ5Sres1szZGUP9"
+                class="link"
+                target="_blank"
+              >
+                На метро
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://goo.gl/maps/4m5wznL8wWGMiEK6A"
+                class="link"
+                target="_blank"
+              >
+                На автомобиле
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://g.page/VRtuality?share"
+                class="link"
+                target="_blank"
+              >
+                Google Карты
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-item modal-item--entertaiment" id="menu">
+
+          <div class="modal-item__location" data-id="location">
+            <div>
+              <input id="location" type="checkbox" class="modal-item__input" data-id="location">
+              <label data-id="location" for="location" class="modal-item__label small">Киев</label>
+            </div>
+
+            <div>
+              <input id="language" type="checkbox" class="modal-item__input">
+              <label for="language" data-id="language" class="modal-item__label small">UA</label>
+            </div>
+          </div>
+
+          <div class="modal-item__selection" id="locationList">
+            <h4 class="modal-item__title">Страна</h4>
+              <ul class="modal-item__list">
+                <li class="modal-item__item small">КЫРГЫЗСКАЯ РЕСПУБЛИКА</li>
+                <li class="modal-item__item small">АЗЕРБАЙДЖАН</li>
+                <li class="modal-item__item--selected small">УКРАИНА</li>
+                <li class="modal-item__item small">США</li>
+                <li class="modal-item__item small">БЕЛЬГИЯ</li>
+                <li class="modal-item__item small">САУДОВСКАЯ АРАВИЯ</li>
+                <li class="modal-item__item small">ФРАНЦИЯ</li>
+                <li class="modal-item__item small">ЕГИПЕТ</li>
+              </ul>
+
+              <hr class="modal-item__separator">
+
+              <h4 class="modal-item__title">Город</h4>
+              <ul class="modal-item__list">
+                <li class="modal-item__item modal-item__item--selected small">КИЕВ</li>
+                <li class="modal-item__item small">ДНЕПР (СКОРО)</li>
+                <li class="modal-item__item small">львов (СКОРО)</li>
+              </ul>
+          </div>
+
+          <div class="modal-item__selection" id="languageList">
+            <ul class="modal-item__list modal-item__list--row">
+              <li class="modal-item__item modal-item__item--selected small">Русский</li>
+              <li class="modal-item__item small">Українська</li>
+            </ul>
+          </div>
+
+          <div class="modal-item__links">
+            <a href="#" class="link link--second">КУПИТЬ БИЛЕТ</a>
+            <a href="#" class="link">Заказать праздник</a>
+          </div>
+
+          <div class="modal-item__info">
+
+            <hr>
+
+            <div>
+              <input id="entertaiment" type="checkbox" class="modal-item__input">
+              <label data-id="entertaiment" for="entertaiment" class="modal-item__label small">Развлечения</label>
+            </div>
+
+            <div class="modal-item__selection" id="entertaimentList">
+              <ul class="modal-item__list">
+                <li
+                  class="
+                  modal-item__item modal-item__item--entertainment
+                  modal-item__item--entertainment--arena
+                  small"
+                >
+                  <a href="#" class="modal-item__link">Арена</a>
+                </li>
+                <li
+                  class="
+                  modal-item__item modal-item__item--entertainment
+                  modal-item__item--entertainment--cube
+                  small"
+                >
+                  <a href="#" class="modal-item__link">Куб</a>
+                </li>
+                <li
+                  class="
+                  modal-item__item modal-item__item--entertainment
+                  modal-item__item--entertainment--attractions
+                  small"
+                >
+                  <a href="#" class="modal-item__link">Аттракционы</a>
+                </li>
+                <li
+                  class="
+                  modal-item__item modal-item__item--entertainment
+                  modal-item__item--entertainment--stands
+                  small"
+                >
+                  <a href="#" class="modal-item__link">Стенды</a>
+                </li>
+                <li
+                  class="
+                  modal-item__item modal-item__item--entertainment
+                  modal-item__item--entertainment--pvp
+                  small"
+                >
+                  <a href="#" class="modal-item__link">PvP-соревнования</a>
+                </li>
+                <li
+                  class="
+                  modal-item__item modal-item__item--entertainment
+                  modal-item__item--entertainment--park
+                  small"
+                >
+                  <a href="#" class="modal-item__link">Билет в парк</a>
+                </li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <div>
+              <input id="holidays" type="checkbox" class="modal-item__input">
+              <label data-id="holidays" for="holidays" class="modal-item__label small">Праздники</label>
+            </div>
+
+            <div class="modal-item__selection" id="holidaysList">
+              <ul class="modal-item__list modal-item__list--holiday">
+                <li
+                  class="modal-item__item modal-item__item--holidays modal-item__item--holidays--child small"
+                >
+                  <a href="#">ДЕТСКИе ДНи РОЖДЕНИя</a>
+                </li>
+                <li
+                  class="modal-item__item modal-item__item--holidays modal-item__item--holidays--adult small"
+                >
+                  <a href="#">ВЗРОСЛЫе ДНи РОЖДЕНИя</a>
+                </li>
+                <li
+                  class="modal-item__item modal-item__item--holidays modal-item__item--holidays--team small"
+                >
+                  <a href="#">КОРПОРАТИВы</a>
+                </li>
+                <li
+                  class="modal-item__item modal-item__item--holidays modal-item__item--holidays--event small"
+                >
+                  <a href="#">ВНестандартное мроприятие</a>
+                </li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <a href="#" class="small">Сертификаты</a>
+
+            <hr>
+
+            <a href="#" class="small">Контакты</a>
+
+            <hr>
+
+            <a
+              href="mailto:info@anviovr.com"
+              target="_blank"
+              class="modal-item__contact contact contact--small"
+            >
+              info@anviovr.com
+            </a>
+
+            <a
+              href="tel:+38067296-30-30"
+              target="_blank"
+              class="modal-item__contact contact"
+            >
+              +38 (067) 296-30-30
+            </a>
+
+            <ul class="socials">
+              <li class="socials__item socials__item--telegram">
+                <a
+                  href="https://www.telegram.org"
+                  class="socials__link"
+                  target="_blank"
+                >
+                  Telegram
+                </a>
+              </li>
+              <li class="socials__item socials__item--whatsup">
+                <a
+                  href="https://www.whatsapp.com"
+                  class="socials__link"
+                  target="_blank"
+                >
+                  Whatsapp
+                </a>
+              </li>
+              <li class="socials__item socials__item--facebook">
+                <a
+                  href="https://www.facebook.com"
+                  class="socials__link"
+                  target="_blank"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="socials__item socials__item--tiktok">
+                <a
+                  href="https://www.tiktok.com"
+                  class="socials__link"
+                  target="_blank"
+                >
+                  TikTok
+                </a>
+              </li>
+              <li class="socials__item socials__item--youtube">
+                <a
+                  href="https://www.youtube.com"
+                  class="socials__link"
+                  target="_blank"
+                >
+                  YouTube
+                </a>
+              </li>
+            </ul>
+
+            <hr>
+
+            <a href="#" class="modal-item__login small">ВОЙТИ</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <section class="hero">
+
+        </section>
+      </div>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque unde possimus, a dolor animi laboriosam quia hic, nobis ratione sequi laudantium voluptatum nulla quidem ullam amet iusto tenetur, vero numquam!</p>
+    </main>
     <footer></footer>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

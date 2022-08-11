@@ -1,0 +1,285 @@
+$modalWidth: 282px;
+
+.modal-item {
+  display: none;
+  align-items: center;
+
+  max-width: $modalWidth;
+
+  padding: 30px;
+
+  background-color: $whiteColor;
+  border-radius: 20px;
+
+  text-transform: uppercase;
+
+  &--entertaiment{
+    justify-content: space-between;
+  }
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__selection {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__metro {
+    display: flex;
+
+    padding: 10px 0 0 0;
+
+    &::before {
+      content: "";
+
+      margin: 0 10px 0 0;
+
+      height: 20px;
+      width: 30px;
+
+      background-image: url("./images/icons/metro.svg");
+    }
+  }
+
+  &__text {
+    padding: 20px 0 0;
+
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: $greyColor;
+  }
+
+  &__img {
+
+    margin: 50px 0 10px;
+
+    height: 300px;
+    width: 282px;
+
+    object-fit: contain;
+    object-position: center;
+    border-radius: 20px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__location {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    width: 100%;
+  }
+
+  &__title {
+    display: block;
+
+    padding: 0 0 12px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+
+    &--holiday {
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    &--row {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &__input {
+    display: none;
+    height: 0;
+    width: 0;
+
+    opacity: 0;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+
+    &::after {
+      content: "";
+
+      display: block;
+
+      height: 20px;
+      width: 20px;
+
+
+      background-image: url("./images/icons/hamburger.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &--active {
+      color: $redColor;
+
+      &::after {
+        background-image: url("./images/icons/hamburgerActive.svg");
+      }
+    }
+
+    &:hover {
+      color: $redColor;
+
+      &::after {
+        background-image: url("./images/icons/hamburgerActive.svg");
+      }
+    }
+  }
+
+  &__separator {
+    margin: 20px 0;
+  }
+
+  &__item {
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--selected {
+      color: $greyColor;
+    }
+
+    &--holidays {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        display: block;
+
+        padding: 0 16px 0 10px;
+
+        height: 40px;
+        width: 40px;
+      }
+
+      &--child {
+        &::before {
+          content: url("./images/icons/baloons.svg");
+        }
+      }
+
+      &--team {
+        &::before {
+          content: url("./images/icons/guy.svg");
+        }
+      }
+
+      &--adult {
+        &::before {
+          content: url("./images/icons/champane.svg");
+        }
+      }
+
+      &--event {
+        &::before {
+          content: url("./images/icons/star.svg");
+        }
+      }
+    }
+
+    &--entertainment {
+      display: block;
+
+      padding: 10px;
+
+      height: 100px;
+      width: 222px;
+
+      border-radius: 10px;
+
+      &--arena {
+        background-image: url("./images/entertaiments/e1.jpg");
+      }
+
+      &--cube {
+        background-image: url("./images/entertaiments/e2.jpg");
+      }
+
+      &--attractions {
+        background-image: url("./images/entertaiments/e3.jpg");
+      }
+
+      &--stands {
+        background-image: url("./images/entertaiments/e4.jpg");
+      }
+
+      &--pvp {
+        background-image: url("./images/entertaiments/e5.jpg");
+      }
+
+      &--park {
+        background-image: url("./images/entertaiments/e6.jpg");
+      }
+    }
+
+    &:hover {
+      transform: scale($buttonsScale);
+    }
+  }
+
+  &__link {
+    display: none;
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &::before {
+      content: "";
+
+      display: block;
+
+      height: 24px;
+      width: 24px;
+
+      background-image: url("./images/icons/login.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__contact {
+    padding: 10px 0 6px;
+  }
+}
