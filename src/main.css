@@ -208,7 +208,7 @@ a {
   right: 0;
   top: 0;
   margin: 0 auto;
-  padding: 10px 10px;
+  padding: 10px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 300;
@@ -237,6 +237,8 @@ a {
   gap: 18px;
 }
 .modal-item__title {
+  display: block;
+  padding: 0 0 12px;
   text-align: center;
 }
 .modal-item__selection {
@@ -247,7 +249,7 @@ a {
 }
 .modal-item__metro {
   display: flex;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
 }
 .modal-item__metro::before {
   content: "";
@@ -288,10 +290,6 @@ a {
   gap: 18px;
   width: 100%;
 }
-.modal-item__title {
-  display: block;
-  padding: 0 0 12px;
-}
 .modal-item__list {
   display: flex;
   flex-direction: column;
@@ -330,13 +328,13 @@ a {
   background-position: center;
 }
 .modal-item__label--active {
-  color: #CE2127;
+  color: #ce2127;
 }
 .modal-item__label--active::after {
   background-image: url("./images/icons/hamburgerActive.svg");
 }
 .modal-item__label:hover {
-  color: #CE2127;
+  color: #ce2127;
 }
 .modal-item__label:hover::after {
   background-image: url("./images/icons/hamburgerActive.svg");
@@ -429,7 +427,7 @@ a {
   height: 40px;
   width: 222px;
   background-color: #fff;
-  border: 2px solid #CE2127;
+  border: 2px solid #ce2127;
   border-radius: 30px;
   color: #000;
   text-align: center;
@@ -446,7 +444,7 @@ a {
   width: 156px;
 }
 .link--second {
-  background-color: #CE2127;
+  background-color: #ce2127;
   color: #fff;
 }
 .link--header {
@@ -465,7 +463,7 @@ a {
 }
 
 .contact {
-  color: #CE2127;
+  color: #ce2127;
   font-size: 20px;
   line-height: 0.8em;
   text-transform: none;
@@ -802,20 +800,20 @@ a {
   background-position: center;
 }
 .label--active {
-  color: #CE2127;
+  color: #ce2127;
 }
 .label--active::after {
   background-image: url("./images/icons/hamburgerActive.svg");
 }
 .label:hover {
-  color: #CE2127;
+  color: #ce2127;
 }
 .label:hover::after {
   background-image: url("./images/icons/hamburgerActive.svg");
 }
 
 .text-link:hover {
-  color: #CE2127;
+  color: #ce2127;
 }
 
 .discount {
@@ -916,11 +914,12 @@ a {
 
 .page {
   position: relative;
+  background-color: #eee;
 }
 
 .metro {
   display: flex;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
 }
 .metro::before {
   content: "";
@@ -940,7 +939,7 @@ a {
 @media (min-width: 1480px) {
   .benefits {
     gap: 75px;
-    margin: -80px 0 0 0;
+    margin: -80px 0 0;
     padding: 0 0 0 20px;
   }
 }
@@ -995,7 +994,7 @@ a {
   position: relative;
   top: -18px;
   object-fit: contain;
-  z-index: -1;
+  z-index: 0;
 }
 @media (min-width: 1480px) {
   .benefits__img {
@@ -1004,6 +1003,57 @@ a {
     top: -330px;
     max-width: 100vw;
   }
+}
+
+.history {
+  margin: 0 auto;
+  padding: 86px 20px 0;
+  max-width: 1570px;
+  text-align: center;
+}
+@media (min-width: 1480px) {
+  .history {
+    text-align: start;
+  }
+}
+.history__logo {
+  padding: 0 0 20px;
+  width: 100%;
+  object-fit: contain;
+}
+.history__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 1480px) {
+  .history__content {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+.history__title {
+  padding: 0 0 10px;
+}
+.history__subtitle {
+  font-size: 48px;
+  line-height: 48px;
+}
+.history__text {
+  font-size: 16px;
+  line-height: 1em;
+}
+.history__info {
+  max-width: 1170px;
+}
+.history__numbers {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 0 auto;
 }
 
 a {
