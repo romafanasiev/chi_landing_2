@@ -1,0 +1,93 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  position: relative;
+
+  padding: 38px $sidePaddingMobile 0;
+
+  @include onDesktop {
+    gap: 75px;
+
+    margin: -80px 0 0 0;
+    padding: 0 0 0 $sidePaddingMobile;
+  }
+
+  &__title {
+    max-width: 1060px;
+    @include onDesktop {
+      max-width: 45%;
+    }
+  }
+
+  &__subtitle {
+    padding: 0 0 14px;
+  }
+
+  &__item {
+    position: relative;
+
+    margin: 0 0 0 70px;
+
+    &::before {
+      content: "";
+
+      display: inline-block;
+
+      position: absolute;
+      left: -70px;
+
+      height: 50px;
+      width: 50px;
+
+      background-image: url("./images/icons/gamepad.svg");
+      background-position: center;
+      background-size: contain;
+
+      @include onDesktop {
+        left: -120px;
+
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    @include onDesktop {
+      margin: 0 0 0 120px;
+
+      max-width: 30%;
+    }
+
+    &--area {
+      &::before {
+        background-image: url("./images/icons/area.svg");
+      }
+    }
+
+    &--group {
+      &::before {
+        background-image: url("./images/icons/group.svg");
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100vw;
+
+    position: relative;
+    top: -18px;
+
+    object-fit: contain;
+
+    z-index: -1;
+
+    @include onDesktop {
+      position: absolute;
+      right: -10px;
+      top: -330px;
+      max-width: 100vw;
+    }
+  }
+}

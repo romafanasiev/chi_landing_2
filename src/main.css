@@ -28,12 +28,36 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 32px;
+  line-height: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+@media (min-width: 1480px) {
+  h2 {
+    text-align: start;
+    font-size: 64px;
+  }
+}
+
 h3 {
+  font-size: 24px;
+  line-height: 1em;
+  font-weight: 600;
+}
+@media (min-width: 1480px) {
+  h3 {
+    font-size: 32px;
+  }
+}
+
+h4 {
   font-size: 20px;
   line-height: 1.5em;
 }
 
-h4 {
+h5 {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.3em;
@@ -433,6 +457,12 @@ a {
   font-weight: 400;
   line-height: 1em;
 }
+@media (min-width: 1480px) {
+  .link--header {
+    width: 257px;
+    height: 60px;
+  }
+}
 
 .contact {
   color: #CE2127;
@@ -645,6 +675,7 @@ a {
   .hero__info {
     flex-direction: row;
     gap: 24px;
+    margin: 0;
     padding: 70px 0 0;
   }
 }
@@ -662,7 +693,7 @@ a {
 }
 .hero__slider {
   margin: 0 auto;
-  padding: 43px 0 0;
+  padding: 35px 0 0;
   max-width: 360px;
 }
 @media (min-width: 1480px) {
@@ -678,7 +709,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 25px 0 0;
+  padding: 0;
   width: 100%;
   position: relative;
   object-fit: cover;
@@ -689,7 +720,6 @@ a {
 }
 @media (min-width: 1480px) {
   .hero__gameplay {
-    padding: 0;
     width: 860px;
     height: 860px;
     position: absolute;
@@ -807,6 +837,8 @@ a {
 }
 @media (min-width: 1480px) {
   .discount {
+    align-items: flex-start;
+    padding: 35px 50px 30px;
     height: 200px;
     width: 500px;
   }
@@ -815,6 +847,11 @@ a {
   font-size: 16px;
   line-height: 0.8em;
   color: #fff;
+}
+@media (min-width: 1480px) {
+  .discount > p {
+    font-size: 24px;
+  }
 }
 .discount--party {
   background-image: url("./images/slider/header/party.svg");
@@ -891,6 +928,82 @@ a {
   height: 20px;
   width: 30px;
   background-image: url("./images/icons/metro.svg");
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  position: relative;
+  padding: 38px 20px 0;
+}
+@media (min-width: 1480px) {
+  .benefits {
+    gap: 75px;
+    margin: -80px 0 0 0;
+    padding: 0 0 0 20px;
+  }
+}
+.benefits__title {
+  max-width: 1060px;
+}
+@media (min-width: 1480px) {
+  .benefits__title {
+    max-width: 45%;
+  }
+}
+.benefits__subtitle {
+  padding: 0 0 14px;
+}
+.benefits__item {
+  position: relative;
+  margin: 0 0 0 70px;
+}
+.benefits__item::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -70px;
+  height: 50px;
+  width: 50px;
+  background-image: url("./images/icons/gamepad.svg");
+  background-position: center;
+  background-size: contain;
+}
+@media (min-width: 1480px) {
+  .benefits__item::before {
+    left: -120px;
+    height: 80px;
+    width: 80px;
+  }
+}
+@media (min-width: 1480px) {
+  .benefits__item {
+    margin: 0 0 0 120px;
+    max-width: 30%;
+  }
+}
+.benefits__item--area::before {
+  background-image: url("./images/icons/area.svg");
+}
+.benefits__item--group::before {
+  background-image: url("./images/icons/group.svg");
+}
+.benefits__img {
+  display: block;
+  max-width: 100vw;
+  position: relative;
+  top: -18px;
+  object-fit: contain;
+  z-index: -1;
+}
+@media (min-width: 1480px) {
+  .benefits__img {
+    position: absolute;
+    right: -10px;
+    top: -330px;
+    max-width: 100vw;
+  }
 }
 
 a {
