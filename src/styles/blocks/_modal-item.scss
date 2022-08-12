@@ -16,7 +16,7 @@ $modalWidth: 282px;
 
   text-transform: uppercase;
 
-  &--entertaiment{
+  &--entertaiment {
     justify-content: space-between;
   }
 
@@ -27,6 +27,10 @@ $modalWidth: 282px;
   }
 
   &__title {
+    display: block;
+
+    padding: 0 0 12px;
+
     text-align: center;
   }
 
@@ -41,7 +45,7 @@ $modalWidth: 282px;
   &__metro {
     display: flex;
 
-    padding: 10px 0 0 0;
+    padding: 10px 0 0;
 
     &::before {
       content: "";
@@ -98,12 +102,6 @@ $modalWidth: 282px;
     width: 100%;
   }
 
-  &__title {
-    display: block;
-
-    padding: 0 0 12px;
-  }
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -144,7 +142,6 @@ $modalWidth: 282px;
 
       height: 20px;
       width: 20px;
-
 
       background-image: url("./images/icons/hamburger.svg");
       background-repeat: no-repeat;
