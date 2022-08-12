@@ -20,6 +20,10 @@
   text-transform: uppercase;
 
   @include onDesktop {
+    align-items: flex-start;
+
+    padding: 35px 50px 30px;
+
     height: 200px;
     width: 500px;
   }
@@ -28,6 +32,10 @@
     font-size: 16px;
     line-height: 0.8em;
     color: $whiteColor;
+
+    @include onDesktop {
+      font-size: 24px;
+    }
   }
 
   &--party {
