@@ -5,6 +5,14 @@
 
   position: relative;
 
+  &--games {
+    display: flex;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
   &__item {
     display: none;
 

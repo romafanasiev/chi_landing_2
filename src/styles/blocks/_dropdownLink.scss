@@ -1,0 +1,48 @@
+.dropdownLink {
+  display: none;
+
+  position: relative;
+
+  padding: 20px 30px;
+
+  height: 70px;
+
+  background-color: $bacgkroundColor;
+  border: 5px solid $whiteColor;
+  border-radius: 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $redColor;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+
+  @include onDesktop {
+    display: block;
+  }
+
+  &:hover {
+    color: $blackColor;
+    background-color: $whiteColor;
+
+    &::after {
+      content: "";
+
+      display: block;
+
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+
+      width: 60px;
+      height: 30px;
+
+      background-image: url("./images/reactangle.png");
+      background-size: fill;
+      background-position: center;
+
+      transform: translateX(-50%);
+    }
+  }
+}
