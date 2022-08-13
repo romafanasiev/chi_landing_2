@@ -1,0 +1,54 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  text-align: center;
+
+  padding: 100px 37px 0;
+
+  &__tickets {
+    margin: 0 auto;
+  }
+
+  &__slider {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 250px;
+
+    @include onDesktop {
+      width: 440px;
+    }
+
+    margin: 0 5px;
+
+    &-item {
+      position: relative;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+  }
+
+  &__play {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  }
+
+  &__text {
+    padding: 20px 0 0;
+  }
+}
