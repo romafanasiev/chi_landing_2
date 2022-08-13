@@ -3,7 +3,13 @@
   flex-direction: column;
   gap: 20px;
 
-  padding: 100px 37px 0;
+  position: relative;
+
+  padding: 100px 37px 80px;
+
+  @include onDesktop {
+    padding: 100px 37px 0;
+  }
 
   &__header {
     display: flex;
@@ -14,6 +20,16 @@
     @include onDesktop {
       flex-direction: row;
       justify-content: space-between;
+    }
+  }
+
+  &__tickets {
+    position: absolute;
+
+    bottom: 0;
+
+    @include onDesktop {
+      position: static;
     }
   }
 
