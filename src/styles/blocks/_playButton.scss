@@ -10,4 +10,10 @@
   background-position: center;
   background-size: auto;
   background-color: $whiteColor;
+
+  &--second {
+    background-image: url("./images/playWhite.svg");
+    background-color: $redColor;
+    border-color: $redColorOpacity;
+  }
 }

@@ -1,0 +1,124 @@
+.emotions {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  padding: 100px 37px 0;
+
+  &__tickets {
+    margin: 0 auto;
+  }
+
+  &__slider {
+    display: flex;
+
+    position: relative;
+
+    @include onDesktop {
+      display: none;
+    }
+
+    &--desk {
+      display: none;
+
+      position: relative;
+
+      @include onDesktop {
+        display: flex;
+      }
+    }
+
+    & .slick-arrow {
+      width: 60px;
+      height: 60px;
+
+      padding: 10px;
+
+      border: none;
+      border-radius: 30px;
+
+      position: absolute;
+      top: 50%;
+      z-index: 100;
+  
+      border: none;
+      border-radius: 30px;
+      background-image: url("./images/slider/direction.svg");
+      background-size: fill;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      font-size: 0;
+
+      transform: translateY(-50%);
+
+      &:hover {
+        background-color: $redColorOpacity;
+      }
+    }
+
+    & .slick-next {
+      right: -30px;
+    }
+
+    & .slick-prev {
+      left: -30px;
+      background-image: url("./images/slider/back.svg");
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 5px;
+
+    &-item {
+      position: relative;
+
+      height: 285px;
+      width: 285px;
+
+      &--desk {
+        height: 211px;
+        width: 211px;
+
+        &:first-child {
+          position: relative;
+          left: -20px;
+        }
+
+        &:last-child {
+          position: relative;
+          right: -20px;
+        }
+      }
+    }
+
+    &--desk {
+      display: none;
+
+      @include onDesktop {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+  }
+
+  &__play {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  }
+}
