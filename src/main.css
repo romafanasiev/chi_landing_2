@@ -1570,6 +1570,49 @@ a {
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 100px 37px 0;
+}
+.feedback__tickets {
+  margin: 0 auto;
+}
+.feedback__slider {
+  display: flex;
+}
+.feedback__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin: 0 5px;
+}
+@media (min-width: 1480px) {
+  .feedback__content {
+    width: 440px;
+  }
+}
+.feedback__content-item {
+  position: relative;
+}
+.feedback__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.feedback__play {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+.feedback__text {
+  padding: 20px 0 0;
+}
+
 a {
   transition-duration: 0.3s;
 }
