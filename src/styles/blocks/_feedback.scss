@@ -3,12 +3,29 @@
   flex-direction: column;
   gap: 20px;
 
+  margin: 0 5px;
+  padding: 145px 37px 0;
+
   text-align: center;
 
-  padding: 100px 37px 0;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @include onDesktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 
   &__tickets {
     margin: 0 auto;
+
+    @include onDesktop {
+      margin: 0;
+    }
   }
 
   &__slider {
@@ -26,8 +43,6 @@
     @include onDesktop {
       width: 440px;
     }
-
-    margin: 0 5px;
 
     &-item {
       position: relative;
