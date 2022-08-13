@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   list-style: none;
 }
@@ -1088,6 +1089,7 @@ a {
 .games__content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
   width: 100%;
 }
@@ -1383,13 +1385,17 @@ a {
   background-size: auto;
   background-color: #fff;
 }
+.playButton--second {
+  background-image: url("./images/playWhite.svg");
+  background-color: #ce2127;
+  border-color: rgba(255, 255, 255, 0.3);
+}
 
 .dropdownLink {
   display: none;
   position: relative;
   padding: 20px 30px;
   height: 70px;
-  color: #ce2127;
   background-color: #eee;
   border: 5px solid #fff;
   border-radius: 20px;
@@ -1423,6 +1429,136 @@ a {
   transform: translateX(-50%);
 }
 
+.emotions {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 37px 0;
+}
+.emotions__tickets {
+  margin: 0 auto;
+}
+.emotions__slider {
+  display: flex;
+  position: relative;
+}
+@media (min-width: 1480px) {
+  .emotions__slider {
+    display: none;
+  }
+}
+.emotions__slider--desk {
+  display: none;
+  position: relative;
+}
+@media (min-width: 1480px) {
+  .emotions__slider--desk {
+    display: flex;
+  }
+}
+.emotions__slider .slick-arrow {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  border: none;
+  border-radius: 30px;
+  background-image: url("./images/slider/direction.svg");
+  background-size: fill;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  transform: translateY(-50%);
+}
+.emotions__slider .slick-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.emotions__slider .slick-next {
+  right: -30px;
+}
+.emotions__slider .slick-prev {
+  left: -30px;
+  background-image: url("./images/slider/back.svg");
+}
+.emotions__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+.emotions__content-item {
+  position: relative;
+  height: 285px;
+  width: 285px;
+}
+.emotions__content-item--desk {
+  height: 211px;
+  width: 211px;
+}
+.emotions__content-item--desk:first-child {
+  position: relative;
+  left: -20px;
+}
+.emotions__content-item--desk:last-child {
+  position: relative;
+  right: -20px;
+}
+.emotions__content--desk {
+  display: none;
+}
+@media (min-width: 1480px) {
+  .emotions__content--desk {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.emotions__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.emotions__play {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+@media (min-width: 1480px) {
+  .slick-list {
+    max-width: 1860px;
+  }
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
 a {
   transition-duration: 0.3s;
 }
