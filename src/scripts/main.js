@@ -152,6 +152,16 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $('.reviews__slider').slick({
+    arrows: true,
+    speed: 300,
+    infinite: true,
+    variableWidth: true
+  });
+});
+
+
+$(document).ready(function(){
   $('.emotions__slider emotions__slider--desk').slick({
     arrows: true,
     speed: 300,
