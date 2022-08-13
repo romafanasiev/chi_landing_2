@@ -12,8 +12,6 @@
   &__slider {
     display: flex;
 
-    position: relative;
-
     @include onDesktop {
       display: none;
     }
@@ -28,43 +26,6 @@
       }
     }
 
-    & .slick-arrow {
-      width: 60px;
-      height: 60px;
-
-      padding: 10px;
-
-      border: none;
-      border-radius: 30px;
-
-      position: absolute;
-      top: 50%;
-      z-index: 100;
-  
-      border: none;
-      border-radius: 30px;
-      background-image: url("./images/slider/direction.svg");
-      background-size: fill;
-      background-position: center;
-      background-repeat: no-repeat;
-
-      font-size: 0;
-
-      transform: translateY(-50%);
-
-      &:hover {
-        background-color: $redColorOpacity;
-      }
-    }
-
-    & .slick-next {
-      right: -30px;
-    }
-
-    & .slick-prev {
-      left: -30px;
-      background-image: url("./images/slider/back.svg");
-    }
   }
 
   &__content {

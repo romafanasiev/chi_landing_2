@@ -1099,7 +1099,12 @@ a {
   }
 }
 .games__item {
-  width: 25%;
+  width: 100%;
+}
+@media (min-width: 1480px) {
+  .games__item {
+    width: 25%;
+  }
 }
 .games__item-content {
   display: none;
@@ -1440,7 +1445,6 @@ a {
 }
 .emotions__slider {
   display: flex;
-  position: relative;
 }
 @media (min-width: 1480px) {
   .emotions__slider {
@@ -1455,34 +1459,6 @@ a {
   .emotions__slider--desk {
     display: flex;
   }
-}
-.emotions__slider .slick-arrow {
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  border: none;
-  border-radius: 30px;
-  position: absolute;
-  top: 50%;
-  z-index: 100;
-  border: none;
-  border-radius: 30px;
-  background-image: url("./images/slider/direction.svg");
-  background-size: fill;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 0;
-  transform: translateY(-50%);
-}
-.emotions__slider .slick-arrow:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.emotions__slider .slick-next {
-  right: -30px;
-}
-.emotions__slider .slick-prev {
-  left: -30px;
-  background-image: url("./images/slider/back.svg");
 }
 .emotions__content {
   display: flex;
@@ -1530,6 +1506,10 @@ a {
 }
 
 /* Слайдер */
+.slick-slider {
+  position: relative;
+}
+
 /* Слайдер запущен */
 /* Слайдер с точками */
 /* Ограничивающая оболочка */
@@ -1553,8 +1533,39 @@ a {
 /* Слайд по центру */
 /* Клонированный слайд */
 /* Стрелка */
+.slick-arrow {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  border: none;
+  border-radius: 30px;
+  background-image: url("./images/slider/direction.svg");
+  background-size: fill;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  transform: translateY(-50%);
+}
+.slick-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 /* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: -30px;
+  background-image: url("./images/slider/back.svg");
+}
+
 /* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: -30px;
+}
+
 /* Стрелка не активная */
 /* Точки (булиты) */
 /* Активная точка */
