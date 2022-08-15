@@ -178,3 +178,12 @@ $(document).ready(function(){
     variableWidth: true
   });
 });
+
+$(document).ready(function(){
+  $('.coupons__slider').slick({
+    arrows: true,
+    speed: 300,
+    infinite: true,
+    variableWidth: true
+  });
+});

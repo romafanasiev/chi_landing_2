@@ -1632,6 +1632,7 @@ a {
 }
 .feedback__text {
   padding: 20px 0 0;
+  max-width: 80%;
 }
 
 .promotions {
@@ -1896,6 +1897,17 @@ a {
 }
 .news__link {
   max-width: 50%;
+}
+
+.coupons {
+  background-color: #ce2127;
+}
+.coupons__slider {
+  margin: 100px 0 0;
+  padding: 30px;
+}
+.coupons__content-item {
+  margin: 0 20px;
 }
 
 a {
