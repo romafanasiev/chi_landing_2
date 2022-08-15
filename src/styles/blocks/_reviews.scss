@@ -7,6 +7,12 @@
 
   &__slider {
     display: flex;
+
+    & .slick-list {
+      // overflow-x: hidden;
+      // overflow-y: visible;
+      overflow: visible;
+    }
   }
 
   &__content {
@@ -22,13 +28,24 @@
     background-color: $whiteColor;
     border-radius: 30px;
 
-    overflow: hidden;
+    // overflow: hidden;
 
-    &:hover > .reviews__item > p, &:hover {
+    &--big {
+      &:hover {
+        transform: translateY(-25%);
+      }
+    }
+
+    &:hover {
       height: max-content;
-      overflow: visible;
 
-      -webkit-mask: none;
+      & > .reviews__item > p {
+        height: max-content;
+
+        overflow: visible;
+
+        -webkit-mask: none;
+      }
     }
 
     @include onDesktop {
@@ -50,7 +67,7 @@
     height: 160px;
 
     overflow: hidden;
-
+    
     -webkit-mask: linear-gradient( to bottom, rgb(0, 0, 0) 10%, rgba(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100% );
   }
 
