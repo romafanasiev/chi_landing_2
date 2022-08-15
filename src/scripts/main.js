@@ -169,3 +169,12 @@ $(document).ready(function(){
     variableWidth: true
   });
 });
+
+$(document).ready(function(){
+  $('.news__slider').slick({
+    arrows: true,
+    speed: 300,
+    infinite: true,
+    variableWidth: true
+  });
+});
