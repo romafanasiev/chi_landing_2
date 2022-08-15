@@ -27,6 +27,8 @@
     justify-content: center;
     align-items: center;
 
+    margin: 186px 0 0;
+
     max-width: 370px;
     height: fit-content;
 
@@ -97,6 +99,8 @@
   &__img {
     width: 125%;
 
+    position: static;
+
     max-width: 916px;
     max-height: 916px;
 
@@ -106,6 +110,7 @@
     @include onDesktop {
       position: absolute;
       left: 25%;
+      top: 186px;
 
       z-index: -1;
     }
@@ -128,7 +133,7 @@
     border-radius: 20px;
 
     &::placeholder {
-      color: #00000080;;
+      color: #00000080;
     }
 
     @include onDesktop {
@@ -149,7 +154,7 @@
     resize: none;
 
     &::placeholder {
-      color: #00000080;;
+      color: #00000080;
     }
   }
 
@@ -162,6 +167,10 @@
     border-radius: 50px;
   }
 
+  &__label {
+    display: none;
+  }
+
   &__button {
     height: 40px;
 
@@ -169,7 +178,6 @@
   }
 
   &__agreement {
-    color: $bacgkroundColor;
     color: #00000080;
   }
 

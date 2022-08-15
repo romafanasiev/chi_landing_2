@@ -1908,6 +1908,7 @@ a {
 
 .coupons {
   background-color: #ce2127;
+  overflow: hidden;
 }
 .coupons__slider {
   margin: 100px 0 0;
@@ -1941,6 +1942,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 186px 0 0;
   max-width: 370px;
   height: fit-content;
   text-align: center;
@@ -2002,6 +2004,7 @@ a {
 }
 .questions__img {
   width: 125%;
+  position: static;
   max-width: 916px;
   max-height: 916px;
   object-fit: contain;
@@ -2011,6 +2014,7 @@ a {
   .questions__img {
     position: absolute;
     left: 25%;
+    top: 186px;
     z-index: -1;
   }
 }
@@ -2051,12 +2055,14 @@ a {
   border: 2px solid #eee;
   border-radius: 50px;
 }
+.questions__label {
+  display: none;
+}
 .questions__button {
   height: 40px;
   width: 100%;
 }
 .questions__agreement {
-  color: #eee;
   color: rgba(0, 0, 0, 0.5019607843);
 }
 .questions__link {
