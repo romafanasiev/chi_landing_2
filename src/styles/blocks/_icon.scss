@@ -1,0 +1,38 @@
+.icon {
+  display: block;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  height: $headerHeight;
+  width: $headerHeight;
+
+  @include onDesktop {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $whiteColor;
+  }
+
+  &--active {
+    background-color: $whiteColor;
+  }
+
+  &--geo {
+    background-image: url("./images/icons/geo.svg");
+  }
+
+  &--phone {
+    background-image: url("./images/icons/phone.svg");
+  }
+
+  &--menu {
+    background-image: url("./images/icons/menu.svg");
+
+    &--active {
+      background-image: url("./images/icons/cross.svg");
+    }
+  }
+}

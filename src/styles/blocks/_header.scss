@@ -1,0 +1,84 @@
+.header {
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: $whiteColorOpacity;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 $sidePaddingMobile;
+
+    height: $headerHeight;
+
+    @include onDesktop {
+      height: $headerHeightDesk;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    right: -10px;
+  }
+
+  &__logo {
+    display: block;
+
+    height: 30px;
+
+    @include onDesktop {
+      height: 40px;
+    }
+
+    &:hover {
+      transform: scale($iconsScale);
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+  }
+
+  &__actions {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @include onDesktop {
+      visibility: visible;
+    }
+  }
+
+  &__tickets {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+}

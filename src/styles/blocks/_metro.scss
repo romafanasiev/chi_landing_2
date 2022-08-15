@@ -1,0 +1,16 @@
+.metro {
+  display: flex;
+
+  padding: 10px 0 0;
+
+  &::before {
+    content: "";
+
+    margin: 0 10px 0 0;
+
+    height: 20px;
+    width: 30px;
+
+    background-image: url("./images/icons/metro.svg");
+  }
+}

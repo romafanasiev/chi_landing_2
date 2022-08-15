@@ -1,0 +1,48 @@
+@import "./utils";
+@import "./typography";
+
+@import "./blocks/wrapper";
+@import "./blocks/header";
+@import "./blocks/icon";
+@import "./blocks/modals";
+@import "./blocks/modal-item";
+@import "./blocks/link";
+@import "./blocks/contact";
+@import "./blocks/socials";
+@import "./blocks/hero.scss";
+@import "./blocks/label";
+@import "./blocks/textLink";
+@import "./blocks/discount";
+@import "./blocks/slider";
+@import "./blocks/page";
+@import "./blocks/metro";
+@import "./blocks/benefits";
+@import "./blocks/history";
+@import "./blocks/games";
+@import "./blocks/dropdown";
+@import "./blocks/gamesSlider";
+@import "./blocks/playButton";
+@import "./blocks/dropdownLink";
+@import "./blocks/emotions";
+@import "./blocks/slick";
+@import "./blocks/feedback";
+@import "./blocks/promotions";
+@import "./blocks/reviews";
+@import "./blocks/news";
+
+a {
+  transition-duration: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+
+  margin: 0;
+  padding: 0;
+
+  color: $blackColor;
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

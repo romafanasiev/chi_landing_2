@@ -1,0 +1,94 @@
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  position: relative;
+
+  padding: 100px 37px 80px;
+
+  @include onDesktop {
+    padding: 100px 37px 0;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @include onDesktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__tickets {
+    position: absolute;
+
+    bottom: 0;
+
+    @include onDesktop {
+      position: static;
+    }
+  }
+
+  &__slider {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 5px;
+    padding: 30px;
+
+    width: 250px;
+
+    background-color: $whiteColor;
+    border-radius: 30px;
+
+    @include onDesktop {
+      padding: 50px;
+
+      width: 400px;
+    }
+
+    &-item {
+      position: relative;
+
+      height: 100%;
+    }
+
+    &-date {
+      padding: 0 0 10px;
+    }
+
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      padding: 0 0 30px;
+    }
+
+    &-paragraph {
+      padding: 0 0 30px;
+    }
+  }
+
+  &__img {
+    padding: 0 0 10px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+  }
+
+  &__link {
+    max-width: 50%;
+  }
+}

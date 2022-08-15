@@ -1,0 +1,153 @@
+.games {
+  margin: 0 auto;
+
+  position: relative;
+
+  width: calc(100% - 40px);
+  height: max-content;
+
+  &__title {
+    padding: 80px 0 35px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    width: 100%;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__item {
+    width: 100%;
+
+    @include onDesktop {
+      width: 25%;
+    }
+
+    &-content {
+      display: none;
+
+      margin: 23px 0 0;
+      padding: 50px 100px 100px;
+
+      width: calc(100vw - 60px);
+
+      background-color: $whiteColor;
+      border-radius: 50px;
+
+      &--2 {
+        transform: translate(-25%);
+      }
+
+      &--3 {
+        transform: translate(-50%);
+      }
+
+      &--4 {
+        transform: translate(-75%);
+      }
+    }
+
+    &:hover > .games__item-content {
+      display: block;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    &-content {
+      width: 32%;
+    }
+
+    &-img {
+      position: relative;
+      top: -80px;
+
+      max-width: 64%;
+
+      object-fit: contain;
+    }
+  }
+
+  &__games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+    flex-grow: 1;
+
+    padding: 30px;
+
+    min-height: 500px;
+    max-width: 31.65%;
+
+    background-image: url("./images/games/game1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+    &--mid {
+      min-width: 48.75%;
+    }
+
+    &--large {
+      min-width: 100%;
+      min-height: 600px;
+    }
+
+    &--survivors {
+      background-image: url("./images/games/game2.jpeg");
+    }
+  
+    &--antidote {
+      background-image: url("./images/games/game3.jpeg");
+    }
+  
+    &--revolta {
+      background-image: url("./images/games/game4.jpeg");
+    }
+  
+    &--station {
+      background-image: url("./images/games/game5.jpeg");
+    }
+  
+    &--sanctuary {
+      background-image: url("./images/games/game6.jpeg");
+    }
+
+    &-links {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &__desktop {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+}

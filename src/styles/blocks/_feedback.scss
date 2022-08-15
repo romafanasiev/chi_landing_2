@@ -1,0 +1,69 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin: 0 5px;
+  padding: 145px 37px 0;
+
+  text-align: center;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @include onDesktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__tickets {
+    margin: 0 auto;
+
+    @include onDesktop {
+      margin: 0;
+    }
+  }
+
+  &__slider {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 250px;
+
+    @include onDesktop {
+      width: 440px;
+    }
+
+    &-item {
+      position: relative;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+  }
+
+  &__play {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  }
+
+  &__text {
+    padding: 20px 0 0;
+  }
+}

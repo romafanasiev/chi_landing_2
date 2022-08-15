@@ -1,0 +1,48 @@
+.discount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 140px;
+  width: 320px;
+
+  padding: 20px 30px;
+
+  border-radius: 20px;
+  background-color: $redColorOpacity;
+  background-image: url("./images/slider/header/discount.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include onDesktop {
+    align-items: flex-start;
+
+    padding: 35px 50px 30px;
+
+    height: 200px;
+    width: 500px;
+  }
+
+  & > p {
+    font-size: 16px;
+    line-height: 0.8em;
+    color: $whiteColor;
+
+    @include onDesktop {
+      font-size: 24px;
+    }
+  }
+
+  &--party {
+    background-image: url("./images/slider/header/party.svg");
+  }
+
+  &--people {
+    background-image: url("./images/slider/header/people.svg");
+  }
+}
