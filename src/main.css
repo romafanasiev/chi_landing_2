@@ -14,13 +14,6 @@ hr {
   font-weight: 400;
   src: url("./fonts/euclidCircularARegular.ttf") format("ttf");
 }
-h1, h2, h3, h3, h5, h6 {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
-
 h1 {
   margin: 0 auto;
   font-size: 32px;
@@ -1927,11 +1920,10 @@ a {
   border-radius: 20px;
 }
 .news__link {
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .coupons {
-  background-color: #ce2127;
   overflow: hidden;
 }
 .coupons__slider {
@@ -1941,12 +1933,14 @@ a {
   align-items: center;
   margin: 100px 0 0;
   padding: 30px 0;
+  background-color: #ce2127;
   overflow: hidden;
 }
 .coupons__slider .slick-track {
   display: flex;
   gap: 20px;
 }
+
 .questions {
   display: flex;
   flex-direction: column;
