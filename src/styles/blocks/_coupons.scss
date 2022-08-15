@@ -1,6 +1,8 @@
 .coupons {
   background-color: $redColor;
 
+  overflow: hidden;
+
   &__slider {
     display: flex;
     flex-direction: column;

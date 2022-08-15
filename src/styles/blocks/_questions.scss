@@ -1,0 +1,188 @@
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  position: relative;
+
+  padding: 0 20px;
+  height: auto;
+
+  overflow: hidden;
+  z-index: 100;
+
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 916px;
+
+    padding: 0 188px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 186px 0 0;
+
+    max-width: 370px;
+    height: fit-content;
+
+    text-align: center;
+
+    @include onDesktop {
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 505px;
+
+      text-align: start;
+    }
+  }
+
+  &__title {
+    text-align: start;
+    font-size: 30px;
+
+    @include onDesktop {
+      font-size: 64px;
+    }
+  }
+
+  &__paragraph {
+    padding: 20px 0;
+
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 1em;
+
+    @include onDesktop {
+      width: 70%;
+
+      font-size: 24px;
+    }
+  }
+
+  &__telephone {
+    position: absolute;
+    bottom: 0;
+
+    @include onDesktop {
+      position: static;
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 18px;
+    line-height: 1.5em;
+
+    &::before {
+      content: url("./images/icons/phoneCall.svg");
+
+      height: 40px;
+      width: 40px;
+    }
+
+    @include onDesktop {
+      font-size: 28px;
+    }
+  }
+
+  &__img {
+    width: 125%;
+
+    position: static;
+
+    max-width: 916px;
+    max-height: 916px;
+
+    object-fit: contain;
+    object-position: center;
+
+    @include onDesktop {
+      position: absolute;
+      left: 25%;
+      top: 186px;
+
+      z-index: -1;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: relative;
+    top: -100px;
+
+    margin: 0 20px;
+    padding: 30px;
+
+    max-width: 450px;
+
+    background-color: $whiteColor;
+    border-radius: 20px;
+
+    &::placeholder {
+      color: #00000080;
+    }
+
+    @include onDesktop {
+      position: static;
+    }
+  }
+
+  &__textarea {
+    margin: -10px 0 0;
+
+    padding: 10px 10px 20px 20px;
+
+    max-height: 150px;
+
+    border: 2px solid $bacgkroundColor;
+    border-radius: 20px;
+
+    resize: none;
+
+    &::placeholder {
+      color: #00000080;
+    }
+  }
+
+  &__input {
+    padding: 20px 10px 20px 20px;
+
+    height: 40px;
+
+    border: 2px solid $bacgkroundColor;
+    border-radius: 50px;
+  }
+
+  &__label {
+    display: none;
+  }
+
+  &__button {
+    height: 40px;
+
+    width: 100%;
+  }
+
+  &__agreement {
+    color: #00000080;
+  }
+
+  &__link {
+    color: #00000080;
+    text-decoration: underline;
+  }
+}
