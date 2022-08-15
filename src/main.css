@@ -1548,6 +1548,7 @@ a {
   z-index: 100;
   border: none;
   border-radius: 30px;
+  background-color: #fff;
   background-image: url("./images/slider/direction.svg");
   background-size: fill;
   background-position: center;
@@ -1556,7 +1557,7 @@ a {
   transform: translateY(-50%);
 }
 .slick-arrow:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #ce2127;
 }
 
 /* Стрелка влево */
@@ -1572,7 +1573,28 @@ a {
 
 /* Стрелка не активная */
 /* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.slick-dots li > button {
+  height: 12px;
+  width: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 0;
+}
+
 /* Активная точка */
+.slick-dots li.slick-active > button {
+  background-color: #fff;
+}
+
 /* Элемент точки */
 .feedback {
   display: flex;
@@ -1744,6 +1766,7 @@ a {
 .reviews__content:hover > .reviews__item > p, .reviews__content:hover {
   height: max-content;
   overflow: visible;
+  -webkit-mask: none;
 }
 @media (min-width: 1480px) {
   .reviews__content {
@@ -1760,6 +1783,7 @@ a {
   padding: 10px 0 0;
   height: 160px;
   overflow: hidden;
+  -webkit-mask: linear-gradient(to bottom, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
 }
 .reviews__photo {
   height: 50px;
@@ -1903,13 +1927,18 @@ a {
   background-color: #ce2127;
 }
 .coupons__slider {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
   margin: 100px 0 0;
-  padding: 30px;
+  padding: 30px 0;
+  overflow: hidden;
 }
-.coupons__content-item {
-  margin: 0 20px;
+.coupons__slider .slick-track {
+  display: flex;
+  gap: 20px;
 }
-
 a {
   transition-duration: 0.3s;
 }

@@ -27,6 +27,8 @@
     &:hover > .reviews__item > p, &:hover {
       height: max-content;
       overflow: visible;
+
+      -webkit-mask: none;
     }
 
     @include onDesktop {
@@ -48,6 +50,8 @@
     height: 160px;
 
     overflow: hidden;
+
+    -webkit-mask: linear-gradient( to bottom, rgb(0, 0, 0) 10%, rgba(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100% );
   }
 
   &__photo {

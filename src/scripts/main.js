@@ -181,6 +181,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.coupons__slider').slick({
+    dots: true,
+    centerMode: true,
     arrows: true,
     speed: 300,
     infinite: true,
