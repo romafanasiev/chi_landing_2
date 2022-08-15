@@ -1821,6 +1821,83 @@ a {
   background-image: url("./images/reviews/starActive.png");
 }
 
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding: 100px 37px 80px;
+}
+@media (min-width: 1480px) {
+  .news {
+    padding: 100px 37px 0;
+  }
+}
+.news__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 1480px) {
+  .news__header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.news__tickets {
+  position: absolute;
+  bottom: 0;
+}
+@media (min-width: 1480px) {
+  .news__tickets {
+    position: static;
+  }
+}
+.news__slider {
+  display: flex;
+}
+.news__content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  padding: 30px;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+@media (min-width: 1480px) {
+  .news__content {
+    padding: 50px;
+    width: 400px;
+  }
+}
+.news__content-item {
+  position: relative;
+  height: 100%;
+}
+.news__content-date {
+  padding: 0 0 10px;
+}
+.news__content-title {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 0 30px;
+}
+.news__content-paragraph {
+  padding: 0 0 30px;
+}
+.news__img {
+  padding: 0 0 10px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+.news__link {
+  max-width: 50%;
+}
+
 a {
   transition-duration: 0.3s;
 }
