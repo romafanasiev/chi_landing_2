@@ -1,5 +1,5 @@
-import $ from "jquery";
-import "slick-carousel";
+// import $ from "jquery";
+// import "slick-carousel";
 
 const modals = document.querySelector(".modals");
 const headerNav = document.querySelectorAll("[data-type ='headerNav']");

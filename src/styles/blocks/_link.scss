@@ -3,8 +3,10 @@
   justify-content: center;
   align-items: center;
 
+  padding: 10px 20px;
+
   height: 40px;
-  width: 222px;
+  // width: 222px;
 
   background-color: $whiteColor;
   border: 2px solid $redColor;
@@ -20,6 +22,10 @@
 
   &:hover {
     transform: scale($buttonsScale);
+  }
+
+  @include onDesktop {
+    height: 60px;
   }
 
   &--small {

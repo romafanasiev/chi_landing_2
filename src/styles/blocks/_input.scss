@@ -1,0 +1,18 @@
+.input {
+  padding: 20px 10px 20px 20px;
+
+  height: 60px;
+  width: 100%;
+
+  border-radius: 50px;
+  border-color: $whiteColorOpacity;
+  border-style: solid;
+  background-color: $footerBackground;
+  outline: none;
+
+  color: $whiteColorOpacity;
+
+  &:hover, &:active {
+    border-color: $redColor;
+  }
+}
