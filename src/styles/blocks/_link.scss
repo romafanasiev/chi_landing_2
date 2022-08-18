@@ -32,7 +32,7 @@
   }
 
   &--opacity {
-    background-color: rgba(255, 255, 255, 0.0);
+    background-color: rgba(255, 255, 255, 0);
     border-color: $whiteColor;
     color: $whiteColor;
     font-size: 14px;
@@ -59,7 +59,7 @@
     height: 40px;
     width: auto;
   }
-  
+
   &--promotions {
     max-width: 153px;
     height: 40px;

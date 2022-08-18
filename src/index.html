@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
     <title>Anvio</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
               src="./images/logo.svg"
               alt="Anvio company logo"
               class="header__logo"
-            >
+            />
           </a>
 
           <nav class="header__nav">
@@ -27,7 +27,11 @@
               data-id="geo"
               data-link="geo"
             ></a>
-            <a href="tel:+380672963030" class="icon icon--phone" target="_blank"></a>
+            <a
+              href="tel:+380672963030"
+              class="icon icon--phone"
+              target="_blank"
+            ></a>
             <a
               href="#"
               class="icon icon--menu"
@@ -56,7 +60,9 @@
             <a href="#" class="link link--second">КУПИТЬ БИЛЕТ</a>
           </div>
           <div class="header__actions">
-            <a href="tel:+380672963030" target="_blank" class="text-link">+38 (067) 296-30-30</a>
+            <a href="tel:+380672963030" target="_blank" class="text-link"
+              >+38 (067) 296-30-30</a
+            >
             <label for="" class="label">КИЕВ</label>
             <a href="#" class="text-link">ВОЙТИ</a>
             <label for="" class="label">UA</label>
@@ -68,14 +74,16 @@
     <main class="page">
       <div class="modals">
         <div class="modal-item" id="geo">
-          <h4 class="modal-item__title">Киев, ул. Вадима Гетьмана, 6, ТРЦ Cosmo Multimall,Блок A, 2-ой этаж</h4>
+          <h4 class="modal-item__title">
+            Киев, ул. Вадима Гетьмана, 6, ТРЦ Cosmo Multimall,Блок A, 2-ой этаж
+          </h4>
           <p class="metro">Шулявська — 400м</p>
           <p class="modal-item__text">ВРЕМЯ РАБОТЫ</p>
           <img
             src="./images/location.jpg"
             alt="location near underground station Shulyavska"
             class="modal-item__img"
-          >
+          />
           <p class="modal-item__text">Как добраться</p>
           <ul class="modal-item__links">
             <li>
@@ -109,7 +117,6 @@
         </div>
 
         <div class="modal-item modal-item--entertaiment" id="menu">
-
           <div class="modal-item__location" data-id="location">
             <div>
               <input
@@ -117,14 +124,23 @@
                 type="checkbox"
                 class="modal-item__input"
                 data-id="location"
-              >
+              />
               <label
-                data-id="location" for="location" class="modal-item__label small">Киев</label>
+                data-id="location"
+                for="location"
+                class="modal-item__label small"
+                >Киев</label
+              >
             </div>
 
             <div>
-              <input id="language" type="checkbox" class="modal-item__input">
-              <label for="language" data-id="language" class="modal-item__label small">UA</label>
+              <input id="language" type="checkbox" class="modal-item__input" />
+              <label
+                for="language"
+                data-id="language"
+                class="modal-item__label small"
+                >UA</label
+              >
             </div>
           </div>
 
@@ -141,11 +157,13 @@
               <li class="modal-item__item small">ЕГИПЕТ</li>
             </ul>
 
-            <hr class="modal-item__separator">
+            <hr class="modal-item__separator" />
 
             <h5 class="modal-item__title">Город</h5>
             <ul class="modal-item__list">
-              <li class="modal-item__item modal-item__item--selected small">КИЕВ</li>
+              <li class="modal-item__item modal-item__item--selected small">
+                КИЕВ
+              </li>
               <li class="modal-item__item small">ДНЕПР (СКОРО)</li>
               <li class="modal-item__item small">львов (СКОРО)</li>
             </ul>
@@ -153,7 +171,9 @@
 
           <div class="modal-item__selection" id="languageList">
             <ul class="modal-item__list modal-item__list--row">
-              <li class="modal-item__item modal-item__item--selected small">Русский</li>
+              <li class="modal-item__item modal-item__item--selected small">
+                Русский
+              </li>
               <li class="modal-item__item small">Українська</li>
             </ul>
           </div>
@@ -164,72 +184,67 @@
           </div>
 
           <div class="modal-item__info">
-
-            <hr>
+            <hr />
 
             <div>
-              <input id="entertaiment" type="checkbox" class="modal-item__input">
-              <label data-id="entertaiment" for="entertaiment" class="modal-item__label small">Развлечения</label>
+              <input
+                id="entertaiment"
+                type="checkbox"
+                class="modal-item__input"
+              />
+              <label
+                data-id="entertaiment"
+                for="entertaiment"
+                class="modal-item__label small"
+                >Развлечения</label
+              >
             </div>
 
             <div class="modal-item__selection" id="entertaimentList">
               <ul class="modal-item__list">
                 <li
-                  class="
-                  modal-item__item modal-item__item--entertainment
-                  modal-item__item--entertainment--arena
-                  small"
+                  class="modal-item__item modal-item__item--entertainment modal-item__item--entertainment--arena small"
                 >
                   <a href="#" class="modal-item__link">Арена</a>
                 </li>
                 <li
-                  class="
-                  modal-item__item modal-item__item--entertainment
-                  modal-item__item--entertainment--cube
-                  small"
+                  class="modal-item__item modal-item__item--entertainment modal-item__item--entertainment--cube small"
                 >
                   <a href="#" class="modal-item__link">Куб</a>
                 </li>
                 <li
-                  class="
-                  modal-item__item modal-item__item--entertainment
-                  modal-item__item--entertainment--attractions
-                  small"
+                  class="modal-item__item modal-item__item--entertainment modal-item__item--entertainment--attractions small"
                 >
                   <a href="#" class="modal-item__link">Аттракционы</a>
                 </li>
                 <li
-                  class="
-                  modal-item__item modal-item__item--entertainment
-                  modal-item__item--entertainment--stands
-                  small"
+                  class="modal-item__item modal-item__item--entertainment modal-item__item--entertainment--stands small"
                 >
                   <a href="#" class="modal-item__link">Стенды</a>
                 </li>
                 <li
-                  class="
-                  modal-item__item modal-item__item--entertainment
-                  modal-item__item--entertainment--pvp
-                  small"
+                  class="modal-item__item modal-item__item--entertainment modal-item__item--entertainment--pvp small"
                 >
                   <a href="#" class="modal-item__link">PvP-соревнования</a>
                 </li>
                 <li
-                  class="
-                  modal-item__item modal-item__item--entertainment
-                  modal-item__item--entertainment--park
-                  small"
+                  class="modal-item__item modal-item__item--entertainment modal-item__item--entertainment--park small"
                 >
                   <a href="#" class="modal-item__link">Билет в парк</a>
                 </li>
               </ul>
             </div>
 
-            <hr>
+            <hr />
 
             <div>
-              <input id="holidays" type="checkbox" class="modal-item__input">
-              <label data-id="holidays" for="holidays" class="modal-item__label small">Праздники</label>
+              <input id="holidays" type="checkbox" class="modal-item__input" />
+              <label
+                data-id="holidays"
+                for="holidays"
+                class="modal-item__label small"
+                >Праздники</label
+              >
             </div>
 
             <div class="modal-item__selection" id="holidaysList">
@@ -257,15 +272,15 @@
               </ul>
             </div>
 
-            <hr>
+            <hr />
 
             <a href="#" class="small">Сертификаты</a>
 
-            <hr>
+            <hr />
 
             <a href="#" class="small">Контакты</a>
 
-            <hr>
+            <hr />
 
             <a
               href="mailto:info@anviovr.com"
@@ -331,43 +346,43 @@
               </li>
             </ul>
 
-            <hr>
+            <hr />
 
             <a href="#" class="modal-item__login small">ВОЙТИ</a>
           </div>
-
         </div>
       </div>
 
       <div class="wrapper">
-
         <section class="hero">
           <p class="hero__location bold">Мы находимся в Cosmo Multimall</p>
           <p class="hero__metro">Шулявська — 400м</p>
           <h1 class="hero__title">
             VR-клуб «Anvio»
-            <br>
-            <span class="hero__subtitle">парк цифровых развлечений для всей семьи</span>
+            <br />
+            <span class="hero__subtitle"
+              >парк цифровых развлечений для всей семьи</span
+            >
           </h1>
           <div class="hero__info">
             <p class="hero__img">
               <span class="hero__img--text">
                 Площадь парка
-                <br>
+                <br />
                 2100 м²
               </span>
             </p>
             <p class="hero__img hero__img--team">
               <span class="hero__img--text">
                 Командные
-                <br>
+                <br />
                 игры
               </span>
             </p>
             <p class="hero__img hero__img--freedom">
               <span class="hero__img--text">
                 Свобода
-                <br>
+                <br />
                 передвижений
               </span>
             </p>
@@ -391,12 +406,14 @@
                   <a href="#" class="link link--opacity">Получить скидку</a>
                 </div>
               </div>
-              
+
               <div class="slider__item">
                 <div class="discount discount--party">
                   <p class="bold">День рождения</p>
                   <p>от 1490 ₴</p>
-                  <a href="#" class="link link--opacity">рассчитать стоимость</a>
+                  <a href="#" class="link link--opacity"
+                    >рассчитать стоимость</a
+                  >
                 </div>
               </div>
 
@@ -415,16 +432,18 @@
             ></button>
           </div>
           <div class="slider__slides-order" data-id="slider1Nav">
-            <div class="slider__slide-number slider__slide-number--active"></div>
+            <div
+              class="slider__slide-number slider__slide-number--active"
+            ></div>
             <div class="slider__slide-number"></div>
             <div class="slider__slide-number"></div>
           </div>
           <div class="hero__gameplay">
             <img
-            src="./images/hero/game.jpg"
-            alt="People playing VR games"
-            class="hero__gameplay"
-            >
+              src="./images/hero/game.jpg"
+              alt="People playing VR games"
+              class="hero__gameplay"
+            />
           </div>
 
           <div class="hero__address">
@@ -432,43 +451,51 @@
               src="./images/hero/cosmo.png"
               alt="Logo Cosmo multimall"
               class="hero__address-image"
-            >
+            />
             <p class="hero__address-title bold">В центре Киева</p>
             <p class="metro">Шулявська — 400м</p>
           </div>
         </section>
 
         <section class="benefits">
-          <h2 class="benefits__title">Причины, по которым вы будете в восторге</h2>
+          <h2 class="benefits__title">
+            Причины, по которым вы будете в восторге
+          </h2>
           <div class="benefits__item">
             <h3 class="benefits__subtitle">Мы разрабатываем игры!</h3>
-            <p>Игры создаю наши гейм дизайнеры, и нигде, кроме ANVIO, в них не сыграть.
-              Поучаствуй в спецоперации по спасению города. Зомби и боссы ждут вас! (Игра City Z)
+            <p>
+              Игры создаю наши гейм дизайнеры, и нигде, кроме ANVIO, в них не
+              сыграть. Поучаствуй в спецоперации по спасению города. Зомби и
+              боссы ждут вас! (Игра City Z)
             </p>
           </div>
           <div class="benefits__item benefits__item--area">
-            <h3 class="benefits__subtitle">100 м² локация свободного перемещения</h3>
+            <h3 class="benefits__subtitle">
+              100 м² локация свободного перемещения
+            </h3>
             <p>
-              Полное погружение в виртуальную реальность со свободой перемещения,
-              через пару минут вы уже забываете, что вы в игре и погружаетесь в экшн.
+              Полное погружение в виртуальную реальность со свободой
+              перемещения, через пару минут вы уже забываете, что вы в игре и
+              погружаетесь в экшн.
             </p>
           </div>
           <div class="benefits__item benefits__item--group">
-            <h3 class="benefits__subtitle">Cвободное перемещение по игровой зоне без проводов</h3>
+            <h3 class="benefits__subtitle">
+              Cвободное перемещение по игровой зоне без проводов
+            </h3>
             <p>
               Не стоите на месте, а по-настоящему движетесь, как участник кино,
               стреляете в монстров и с криками убегаете от них.
             </p>
           </div>
           <img
-              srcset="./images/park.png 349w,
-                      ./images/parkDesk.png 1877w"
-              sizes="(max-width: 500px) 100%,
+            srcset="./images/park.png 349w, ./images/parkDesk.png 1877w"
+            sizes="(max-width: 500px) 100%,
                      (min-width: 501px) 100%"
-              src="./images/park.png"
-              class="benefits__img"
-              alt="park map"
-            >
+            src="./images/park.png"
+            class="benefits__img"
+            alt="park map"
+          />
         </section>
 
         <section class="history">
@@ -476,24 +503,30 @@
             src="./images/bigLogo.png"
             alt="ANVIO company logo"
             class="history__logo"
-          >
+          />
           <div class="history__content">
             <div class="history__info">
               <h2 class="history__title">Международная сеть VR клубов</h2>
               <p>
-                Мы открыли парк цифровых развлечений для всей семьи в самом центре Киева в Цетральном дестком магазине.
-                На 2100 м² мы выстроили абсолютно новое игровое пространство, объединяюющее в себе VR-арены,
-                стенды, игровые автоматы и аттракционы.
-                <br>
-                <br>
+                Мы открыли парк цифровых развлечений для всей семьи в самом
+                центре Киева в Цетральном дестком магазине. На 2100 м² мы
+                выстроили абсолютно новое игровое пространство, объединяюющее в
+                себе VR-арены, стенды, игровые автоматы и аттракционы.
+                <br />
+                <br />
                 Anvio VR — это международная сеть клубов виртуальной реальности,
                 расположенных по всему миру более чем в 26 странах: США, Канада,
-                Франция, Израиль, Германия, Китай, Бразилия, Колумбия, Украина, Киргизстан.
+                Франция, Израиль, Германия, Китай, Бразилия, Колумбия, Украина,
+                Киргизстан.
               </p>
             </div>
             <div class="history__numbers">
-              <p class="history__numbers-text bold"><span class="history__subtitle bold">12</span><br>стран</p>
-              <p class="history__numbers-text bold"><span class="history__subtitle bold">26</span><br>клубов</p>
+              <p class="history__numbers-text bold">
+                <span class="history__subtitle bold">12</span><br />стран
+              </p>
+              <p class="history__numbers-text bold">
+                <span class="history__subtitle bold">26</span><br />клубов
+              </p>
             </div>
           </div>
         </section>
@@ -508,28 +541,41 @@
                 src="./images/games/arenapng.png"
                 alt="arena for vr games"
                 class="dropdown__img"
-              >
+              />
               <div class="dropdown__content dropdown__content--arena">
                 <h3>Арена</h3>
                 <div class="dropdown__additionalContent">
                   <p class="bold dropdown__info">2-12</p>
-                  <p class="bold dropdown__info dropdown__info--time">40 мин.</p>
-                  <p class="bold dropdown__info dropdown__info--money">от 500 ₴</p>
+                  <p class="bold dropdown__info dropdown__info--time">
+                    40 мин.
+                  </p>
+                  <p class="bold dropdown__info dropdown__info--money">
+                    от 500 ₴
+                  </p>
                 </div>
-                <p>В нашем парке можно устроить праздник, который не забудется ни имененниками, ни их гостями.</p>
+                <p>
+                  В нашем парке можно устроить праздник, который не забудется ни
+                  имененниками, ни их гостями.
+                </p>
                 <div class="dropdown__links">
-                  <a href="#" class="link link--second link--dropdown dropdown__small">Цены</a>
-                  <a href="#" class="link link--dropdown dropdown__large">ПОДРОБНЕЕ</a>
+                  <a
+                    href="#"
+                    class="link link--second link--dropdown dropdown__small"
+                    >Цены</a
+                  >
+                  <a href="#" class="link link--dropdown dropdown__large"
+                    >ПОДРОБНЕЕ</a
+                  >
                 </div>
               </div>
-  
+
               <div class="slider slider--games" data-id="slider2">
                 <button
                   class="slider__button slider__button--back"
                   data-id="slider2"
                   data-type="sliderButton"
                 ></button>
-  
+
                 <div class="slider__items">
                   <div class="slider__item slider__item--active">
                     <div class="gamesSlider">
@@ -543,33 +589,53 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="gamesSlider__links">
-                          <a href="#" class="link link--second">Забронировать</a>
-                          <a href="#" class="link link--opacity gamesSlider__link">Подробнее</a>
+                          <a href="#" class="link link--second"
+                            >Забронировать</a
+                          >
+                          <a
+                            href="#"
+                            class="link link--opacity gamesSlider__link"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
                     </div>
-  
+
                     <div class="gamesSlider__sub">
                       <div class="gamesSlider__selected">
                         <p class="gamesSlider__subtext">City-Z</p>
-                        <img class="gamesSlider__img" src="./images/games/game1.jpeg" alt="City-Z game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game1.jpeg"
+                          alt="City-Z game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">City Z: SURVIVORS</p>
-                        <img class="gamesSlider__img" src="./images/games/game2.jpeg" alt="City Z: SURVIVORS game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game2.jpeg"
+                          alt="City Z: SURVIVORS game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">City Z: Antidote</p>
-                        <img class="gamesSlider__img" src="./images/games/game3.jpeg" alt="City Z: Antidote game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game3.jpeg"
+                          alt="City Z: Antidote game"
+                        />
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="slider__item">
                     <div class="gamesSlider">
-                      <div class="gamesSlider__main gamesSlider__main--survivors">
+                      <div
+                        class="gamesSlider__main gamesSlider__main--survivors"
+                      >
                         <a href="#" class="playButton gamesSlider__play"></a>
                         <h3 class="whiteText">City Z: SURVIVORS</h3>
                         <p class="gamesSlider__info">
@@ -579,33 +645,53 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="gamesSlider__links">
-                          <a href="#" class="link link--second">Забронировать</a>
-                          <a href="#" class="link link--opacity gamesSlider__link">Подробнее</a>
+                          <a href="#" class="link link--second"
+                            >Забронировать</a
+                          >
+                          <a
+                            href="#"
+                            class="link link--opacity gamesSlider__link"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
                     </div>
-  
+
                     <div class="gamesSlider__sub">
                       <div class="gamesSlider__selected">
                         <p class="gamesSlider__subtext">City Z: SURVIVORS</p>
-                        <img class="gamesSlider__img" src="./images/games/game2.jpeg" alt="City Z: SURVIVORS game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game2.jpeg"
+                          alt="City Z: SURVIVORS game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">City Z: Antidote</p>
-                        <img class="gamesSlider__img" src="./images/games/game3.jpeg" alt="City Z: Antidote game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game3.jpeg"
+                          alt="City Z: Antidote game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">REVOLTA</p>
-                        <img class="gamesSlider__img" src="./images/games/game4.jpeg" alt="REVOLTA game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game4.jpeg"
+                          alt="REVOLTA game"
+                        />
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="slider__item">
                     <div class="gamesSlider">
-                      <div class="gamesSlider__main gamesSlider__main--antidote">
+                      <div
+                        class="gamesSlider__main gamesSlider__main--antidote"
+                      >
                         <a href="#" class="playButton gamesSlider__play"></a>
                         <h3 class="whiteText">City Z: Antidote</h3>
                         <p class="gamesSlider__info">
@@ -615,30 +701,48 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="gamesSlider__links">
-                          <a href="#" class="link link--second">Забронировать</a>
-                          <a href="#" class="link link--opacity gamesSlider__link">Подробнее</a>
+                          <a href="#" class="link link--second"
+                            >Забронировать</a
+                          >
+                          <a
+                            href="#"
+                            class="link link--opacity gamesSlider__link"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
                     </div>
-  
+
                     <div class="gamesSlider__sub">
                       <div class="gamesSlider__selected">
                         <p class="gamesSlider__subtext">City Z: Antidote</p>
-                        <img class="gamesSlider__img" src="./images/games/game3.jpeg" alt="City Z: Antidote game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game3.jpeg"
+                          alt="City Z: Antidote game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">REVOLTA</p>
-                        <img class="gamesSlider__img" src="./images/games/game4.jpeg" alt="REVOLTA game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game4.jpeg"
+                          alt="REVOLTA game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">Station Zarya</p>
-                        <img class="gamesSlider__img" src="./images/games/game5.jpeg" alt="Station Zarya game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game5.jpeg"
+                          alt="Station Zarya game"
+                        />
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="slider__item">
                     <div class="gamesSlider">
                       <div class="gamesSlider__main gamesSlider__main--revolta">
@@ -651,30 +755,48 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="gamesSlider__links">
-                          <a href="#" class="link link--second">Забронировать</a>
-                          <a href="#" class="link link--opacity gamesSlider__link">Подробнее</a>
+                          <a href="#" class="link link--second"
+                            >Забронировать</a
+                          >
+                          <a
+                            href="#"
+                            class="link link--opacity gamesSlider__link"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
                     </div>
-  
+
                     <div class="gamesSlider__sub">
                       <div class="gamesSlider__selected">
                         <p class="gamesSlider__subtext">REVOLTA</p>
-                        <img class="gamesSlider__img" src="./images/games/game4.jpeg" alt="REVOLTA game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game4.jpeg"
+                          alt="REVOLTA game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">Station Zarya</p>
-                        <img class="gamesSlider__img" src="./images/games/game5.jpeg" alt="Station Zarya game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game5.jpeg"
+                          alt="Station Zarya game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">LOST SANCTUARY</p>
-                        <img class="gamesSlider__img" src="./images/games/game6.jpeg" alt="LOST SANCTUARY game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game6.jpeg"
+                          alt="LOST SANCTUARY game"
+                        />
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="slider__item">
                     <div class="gamesSlider">
                       <div class="gamesSlider__main gamesSlider__main--station">
@@ -687,33 +809,53 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="gamesSlider__links">
-                          <a href="#" class="link link--second">Забронировать</a>
-                          <a href="#" class="link link--opacity gamesSlider__link">Подробнее</a>
+                          <a href="#" class="link link--second"
+                            >Забронировать</a
+                          >
+                          <a
+                            href="#"
+                            class="link link--opacity gamesSlider__link"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
                     </div>
-  
+
                     <div class="gamesSlider__sub">
                       <div class="gamesSlider__selected">
                         <p class="gamesSlider__subtext">Station Zarya</p>
-                        <img class="gamesSlider__img" src="./images/games/game5.jpeg" alt="Station Zarya game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game5.jpeg"
+                          alt="Station Zarya game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">LOST SANCTUARY</p>
-                        <img class="gamesSlider__img" src="./images/games/game6.jpeg" alt="LOST SANCTUARY game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game6.jpeg"
+                          alt="LOST SANCTUARY game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">City Z</p>
-                        <img class="gamesSlider__img" src="./images/games/game1.jpeg" alt="City game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game1.jpeg"
+                          alt="City game"
+                        />
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="slider__item">
                     <div class="gamesSlider">
-                      <div class="gamesSlider__main gamesSlider__main--sanctuary">
+                      <div
+                        class="gamesSlider__main gamesSlider__main--sanctuary"
+                      >
                         <a href="#" class="playButton gamesSlider__play"></a>
                         <h3 class="whiteText">LOST SANCTUARY</h3>
                         <p class="gamesSlider__info">
@@ -723,31 +865,49 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="gamesSlider__links">
-                          <a href="#" class="link link--second">Забронировать</a>
-                          <a href="#" class="link link--opacity gamesSlider__link">Подробнее</a>
+                          <a href="#" class="link link--second"
+                            >Забронировать</a
+                          >
+                          <a
+                            href="#"
+                            class="link link--opacity gamesSlider__link"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
                     </div>
-  
+
                     <div class="gamesSlider__sub">
                       <div class="gamesSlider__selected">
                         <p class="gamesSlider__subtext">LOST SANCTUARY</p>
-                        <img class="gamesSlider__img" src="./images/games/game6.jpeg" alt="LOST SANCTUARY game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game6.jpeg"
+                          alt="LOST SANCTUARY game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">City Z</p>
-                        <img class="gamesSlider__img" src="./images/games/game1.jpeg" alt="City Z game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game1.jpeg"
+                          alt="City Z game"
+                        />
                       </div>
-  
+
                       <div class="gamesSlider__disabled">
                         <p class="gamesSlider__subtext">City Z: SURVIVORS</p>
-                        <img class="gamesSlider__img" src="./images/games/game2.jpeg" alt="City Z: SURVIVORS game">
+                        <img
+                          class="gamesSlider__img"
+                          src="./images/games/game2.jpeg"
+                          alt="City Z: SURVIVORS game"
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
-  
+
                 <button
                   class="slider__button"
                   data-id="slider2"
@@ -755,30 +915,55 @@
                 ></button>
               </div>
             </details>
-  
+
             <details class="dropdown games__item">
               <summary class="dropdown__title">АТРАКЦИОНЫ</summary>
-              <p class="dropdown__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore possimus quo ipsum, aliquam, voluptates magnam doloremque esse modi animi aliquid cumque omnis impedit excepturi? Sequi numquam commodi reiciendis quo labore!</p>
+              <p class="dropdown__content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Inventore possimus quo ipsum, aliquam, voluptates magnam
+                doloremque esse modi animi aliquid cumque omnis impedit
+                excepturi? Sequi numquam commodi reiciendis quo labore!
+              </p>
             </details>
-  
+
             <details class="dropdown games__item">
               <summary class="dropdown__title">СТЕНДЫ</summary>
-              <p class="dropdown__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sed iusto laudantium quidem error, ipsa saepe obcaecati magnam molestias officiis voluptate maiores! Quisquam soluta minima recusandae quam obcaecati accusamus aliquam.</p>
+              <p class="dropdown__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                sed iusto laudantium quidem error, ipsa saepe obcaecati magnam
+                molestias officiis voluptate maiores! Quisquam soluta minima
+                recusandae quam obcaecati accusamus aliquam.
+              </p>
             </details>
-  
+
             <details class="dropdown games__item">
               <summary class="dropdown__title">КУБЫ</summary>
-              <p class="dropdown__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sunt nemo molestias quis doloribus deleniti eveniet suscipit optio magnam veniam. Itaque reiciendis ipsa ea cupiditate consequuntur ab totam molestias at!</p>
+              <p class="dropdown__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                sunt nemo molestias quis doloribus deleniti eveniet suscipit
+                optio magnam veniam. Itaque reiciendis ipsa ea cupiditate
+                consequuntur ab totam molestias at!
+              </p>
             </details>
-  
+
             <details class="dropdown games__item games__item--disabled">
               <summary class="dropdown__title">ДЕТСКАЯ ЗОНА</summary>
-              <p class="dropdown__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quasi, adipisci modi consectetur officiis, eligendi nisi voluptatem dolor accusantium harum alias qui provident, error possimus! At, inventore! Incidunt, corporis architecto?</p>
+              <p class="dropdown__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis quasi, adipisci modi consectetur officiis, eligendi
+                nisi voluptatem dolor accusantium harum alias qui provident,
+                error possimus! At, inventore! Incidunt, corporis architecto?
+              </p>
             </details>
-  
+
             <details class="dropdown games__item games__item--disabled">
               <summary class="dropdown__title">PVP-СОРЕВНОВАНИЯ</summary>
-              <p class="dropdown__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur minus ipsam tempore, soluta omnis facere vitae totam nesciunt exercitationem rem assumenda temporibus, illo architecto porro non eum. Molestias, quis ipsa.</p>
+              <p class="dropdown__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tenetur minus ipsam tempore, soluta omnis facere vitae totam
+                nesciunt exercitationem rem assumenda temporibus, illo
+                architecto porro non eum. Molestias, quis ipsa.
+              </p>
             </details>
           </div>
 
@@ -796,7 +981,10 @@
                           <span>40 мин.</span>
                           <span>от 250 ₴</span>
                         </p>
-                        <p>В нашем парке можно устроить праздник, который не забудется ни имененниками, ни их гостями.</p>
+                        <p>
+                          В нашем парке можно устроить праздник, который не
+                          забудется ни имененниками, ни их гостями.
+                        </p>
                         <div class="links">
                           <a href="#">Цены</a>
                           <a href="#">ПОДРОБНЕЕ</a>
@@ -806,7 +994,7 @@
                         src="./images/games/arenaDesk.png"
                         alt="Area for VR games"
                         class="games__info-img"
-                      >
+                      />
                     </div>
                     <div class="games__games">
                       <div class="games__game">
@@ -819,8 +1007,12 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="games__game-links">
-                          <a href="#" class="link link--second link--games">Забронировать</a>
-                          <a href="#" class="link link--opacity link--games">Подробнее</a>
+                          <a href="#" class="link link--second link--games"
+                            >Забронировать</a
+                          >
+                          <a href="#" class="link link--opacity link--games"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
 
@@ -834,8 +1026,12 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="games__game-links">
-                          <a href="#" class="link link--second link--games">Забронировать</a>
-                          <a href="#" class="link link--opacity link--games">Подробнее</a>
+                          <a href="#" class="link link--second link--games"
+                            >Забронировать</a
+                          >
+                          <a href="#" class="link link--opacity link--games"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
 
@@ -849,12 +1045,18 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="games__game-links">
-                          <a href="#" class="link link--second link--games">Забронировать</a>
-                          <a href="#" class="link link--opacity link--games">Подробнее</a>
+                          <a href="#" class="link link--second link--games"
+                            >Забронировать</a
+                          >
+                          <a href="#" class="link link--opacity link--games"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
 
-                      <div class="games__game games__game--large games__game--revolta">
+                      <div
+                        class="games__game games__game--large games__game--revolta"
+                      >
                         <a href="#" class="playButton"></a>
                         <h3 class="whiteText">REVOLTA</h3>
                         <p>
@@ -864,12 +1066,18 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="games__game-links">
-                          <a href="#" class="link link--second link--games">Забронировать</a>
-                          <a href="#" class="link link--opacity link--games">Подробнее</a>
+                          <a href="#" class="link link--second link--games"
+                            >Забронировать</a
+                          >
+                          <a href="#" class="link link--opacity link--games"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
 
-                      <div class="games__game games__game--mid games__game--station">
+                      <div
+                        class="games__game games__game--mid games__game--station"
+                      >
                         <a href="#" class="playButton"></a>
                         <h3 class="whiteText">Station Zarya</h3>
                         <p>
@@ -879,12 +1087,18 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="games__game-links">
-                          <a href="#" class="link link--second link--games">Забронировать</a>
-                          <a href="#" class="link link--opacity link--games">Подробнее</a>
+                          <a href="#" class="link link--second link--games"
+                            >Забронировать</a
+                          >
+                          <a href="#" class="link link--opacity link--games"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
 
-                      <div class="games__game games__game--mid games__game--sanctuary">
+                      <div
+                        class="games__game games__game--mid games__game--sanctuary"
+                      >
                         <a href="#" class="playButton"></a>
                         <h3 class="whiteText">LOST SANCTUARY</h3>
                         <p>
@@ -894,8 +1108,12 @@
                           <span class="whiteText">12+</span>
                         </p>
                         <div class="games__game-links">
-                          <a href="#" class="link link--second link--games">Забронировать</a>
-                          <a href="#" class="link link--opacity link--games">Подробнее</a>
+                          <a href="#" class="link link--second link--games"
+                            >Забронировать</a
+                          >
+                          <a href="#" class="link link--opacity link--games"
+                            >Подробнее</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -905,15 +1123,21 @@
 
               <div class="games__item">
                 <p class="dropdownLink">АТТРАКЦИОНЫ</p>
-                <p class="games__item-content games__item-content--2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="games__item-content games__item-content--2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
               </div>
               <div class="games__item">
                 <p class="dropdownLink">СТЕНДЫ</p>
-                <p class="games__item-content games__item-content--3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="games__item-content games__item-content--3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
               </div>
               <div class="games__item">
                 <p class="dropdownLink">КУБЫ</p>
-                <p class="games__item-content games__item-content--4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="games__item-content games__item-content--4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
               </div>
             </div>
           </div>
@@ -921,31 +1145,17 @@
 
         <section class="emotions">
           <h2>Неподдельные эмоции наших гостей</h2>
-          <a href="#" class="link link--second emotions__tickets">КУПИТЬ БИЛЕТ В ПАРК</a>
+          <a href="#" class="link link--second emotions__tickets"
+            >КУПИТЬ БИЛЕТ В ПАРК</a
+          >
           <div class="emotions__slider">
-
             <div class="emotions__content">
               <div class="emotions__content-item">
                 <img
-                src="./images/emotions/emotion1.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
-                <a
-                  href="#"
-                  class="playButton playButton--second emotions__play"
-                ></a>
-              </div>
-
-            </div>
-
-            <div class="emotions__content">
-              <div class="emotions__content-item">
-                <img
-                src="./images/emotions/emotion2.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion1.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -956,10 +1166,24 @@
             <div class="emotions__content">
               <div class="emotions__content-item">
                 <img
-                src="./images/emotions/emotion3.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion2.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
+                <a
+                  href="#"
+                  class="playButton playButton--second emotions__play"
+                ></a>
+              </div>
+            </div>
+
+            <div class="emotions__content">
+              <div class="emotions__content-item">
+                <img
+                  src="./images/emotions/emotion3.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -973,7 +1197,7 @@
                   src="./images/emotions/emotion4.png"
                   alt="People playing vr games"
                   class="emotions__img"
-                >
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -984,25 +1208,24 @@
             <div class="emotions__content">
               <div class="emotions__content-item">
                 <img
-                src="./images/emotions/emotion1.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion1.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
                 ></a>
               </div>
-
             </div>
 
             <div class="emotions__content">
               <div class="emotions__content-item">
                 <img
-                src="./images/emotions/emotion2.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion2.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1012,57 +1235,13 @@
           </div>
 
           <div class="emotions__slider emotions__slider--desk">
-
             <div class="emotions__content">
               <div class="emotions__content-item">
                 <img
-                src="./images/emotions/emotion1.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
-                <a
-                  href="#"
-                  class="playButton playButton--second emotions__play"
-                ></a>
-              </div>
-
-            </div>
-
-            <div class="emotions__content emotions__content--desk">
-
-              <div class="emotions__content-item emotions__content-item--desk">
-                <img
-                src="./images/emotions/emotion1.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
-                <a
-                  href="#"
-                  class="playButton playButton--second emotions__play"
-                ></a>
-              </div>
-
-              <div class="emotions__content-item emotions__content-item--desk">
-                <img
-                src="./images/emotions/emotion2.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
-                <a
-                  href="#"
-                  class="playButton playButton--second emotions__play"
-                ></a>
-              </div>
-
-            </div>
-
-            <div class="emotions__content">
-              <div class="emotions__content-item">
-                <img
-                src="./images/emotions/emotion2.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion1.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1071,13 +1250,12 @@
             </div>
 
             <div class="emotions__content emotions__content--desk">
-
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion3.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion1.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1086,25 +1264,24 @@
 
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion4.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion2.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
                 ></a>
               </div>
-
             </div>
 
             <div class="emotions__content">
               <div class="emotions__content-item">
                 <img
-                src="./images/emotions/emotion3.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion2.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1113,13 +1290,12 @@
             </div>
 
             <div class="emotions__content emotions__content--desk">
-
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion1.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion3.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1128,16 +1304,55 @@
 
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion2.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion4.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
+                <a
+                  href="#"
+                  class="playButton playButton--second emotions__play"
+                ></a>
+              </div>
+            </div>
+
+            <div class="emotions__content">
+              <div class="emotions__content-item">
+                <img
+                  src="./images/emotions/emotion3.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
+                <a
+                  href="#"
+                  class="playButton playButton--second emotions__play"
+                ></a>
+              </div>
+            </div>
+
+            <div class="emotions__content emotions__content--desk">
+              <div class="emotions__content-item emotions__content-item--desk">
+                <img
+                  src="./images/emotions/emotion1.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
                 ></a>
               </div>
 
+              <div class="emotions__content-item emotions__content-item--desk">
+                <img
+                  src="./images/emotions/emotion2.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
+                <a
+                  href="#"
+                  class="playButton playButton--second emotions__play"
+                ></a>
+              </div>
             </div>
 
             <div class="emotions__content">
@@ -1146,7 +1361,7 @@
                   src="./images/emotions/emotion4.png"
                   alt="People playing vr games"
                   class="emotions__img"
-                >
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1155,13 +1370,12 @@
             </div>
 
             <div class="emotions__content emotions__content--desk">
-
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion3.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion3.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1170,41 +1384,38 @@
 
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion4.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion4.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
                 ></a>
               </div>
-
             </div>
 
             <div class="emotions__content">
               <div class="emotions__content-item">
                 <img
-                src="./images/emotions/emotion1.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion1.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
                 ></a>
               </div>
-
             </div>
 
             <div class="emotions__content emotions__content--desk">
-
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion1.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion1.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1213,25 +1424,24 @@
 
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion2.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion2.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
                 ></a>
               </div>
-
             </div>
 
             <div class="emotions__content">
               <div class="emotions__content-item">
                 <img
-                src="./images/emotions/emotion2.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion2.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1240,13 +1450,12 @@
             </div>
 
             <div class="emotions__content emotions__content--desk">
-
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion3.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion3.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
@@ -1255,37 +1464,42 @@
 
               <div class="emotions__content-item emotions__content-item--desk">
                 <img
-                src="./images/emotions/emotion4.png"
-                alt="People playing vr games"
-                class="emotions__img"
-                >
+                  src="./images/emotions/emotion4.png"
+                  alt="People playing vr games"
+                  class="emotions__img"
+                />
                 <a
                   href="#"
                   class="playButton playButton--second emotions__play"
                 ></a>
               </div>
             </div>
-
           </div>
         </section>
 
         <section class="feedback">
           <div class="feedback__header">
             <h2>Впечатления звёздных гостей</h2>
-            <a href="#" class="link link--second feedback__tickets">КУПИТЬ БИЛЕТ В ПАРК</a>
+            <a href="#" class="link link--second feedback__tickets"
+              >КУПИТЬ БИЛЕТ В ПАРК</a
+            >
           </div>
           <div class="feedback__slider">
-
             <div class="feedback__content">
               <div class="feedback__content-item">
                 <img
                   src="./images/feedback/feedback1.png"
                   alt="David Backhem in London`s Anvio"
                   class="feedback__img"
-                >
-                <a href="#" class="playButton playButton--second feedback__play"></a>
+                />
+                <a
+                  href="#"
+                  class="playButton playButton--second feedback__play"
+                ></a>
               </div>
-              <p class="feedback__text">Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio</p>
+              <p class="feedback__text">
+                Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio
+              </p>
             </div>
 
             <div class="feedback__content">
@@ -1294,10 +1508,15 @@
                   src="./images/feedback/feedback2.png"
                   alt="David Backhem in London`s Anvio"
                   class="feedback__img"
-                >
-                <a href="#" class="playButton playButton--second feedback__play"></a>
+                />
+                <a
+                  href="#"
+                  class="playButton playButton--second feedback__play"
+                ></a>
               </div>
-              <p class="feedback__text">Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio</p>
+              <p class="feedback__text">
+                Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio
+              </p>
             </div>
 
             <div class="feedback__content">
@@ -1306,10 +1525,15 @@
                   src="./images/feedback/feedback1.png"
                   alt="David Backhem in London`s Anvio"
                   class="feedback__img"
-                >
-                <a href="#" class="playButton playButton--second feedback__play"></a>
+                />
+                <a
+                  href="#"
+                  class="playButton playButton--second feedback__play"
+                ></a>
               </div>
-              <p class="feedback__text">Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio</p>
+              <p class="feedback__text">
+                Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio
+              </p>
             </div>
 
             <div class="feedback__content">
@@ -1318,10 +1542,15 @@
                   src="./images/feedback/feedback2.png"
                   alt="David Backhem in London`s Anvio"
                   class="feedback__img"
-                >
-                <a href="#" class="playButton playButton--second feedback__play"></a>
+                />
+                <a
+                  href="#"
+                  class="playButton playButton--second feedback__play"
+                ></a>
               </div>
-              <p class="feedback__text">Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio</p>
+              <p class="feedback__text">
+                Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio
+              </p>
             </div>
 
             <div class="feedback__content">
@@ -1330,12 +1559,16 @@
                   src="./images/feedback/feedback1.png"
                   alt="David Backhem in London`s Anvio"
                   class="feedback__img"
-                >
-                <a href="#" class="playButton playButton--second feedback__play"></a>
+                />
+                <a
+                  href="#"
+                  class="playButton playButton--second feedback__play"
+                ></a>
               </div>
-              <p class="feedback__text">Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio</p>
+              <p class="feedback__text">
+                Дэвид Бекхэм заглянул с сыновьями в лондонскую арену Anvio
+              </p>
             </div>
-
           </div>
         </section>
 
@@ -1349,7 +1582,7 @@
                     class="reviews__photo"
                     src="./images/reviews/person1.png"
                     alt="author of the review"
-                  >
+                  />
                   <div class="reviews__message">
                     <p class="bold reviews__name">Алиса Колычева</p>
                     <div class="reviews__stars reviews__stars--3">
@@ -1363,11 +1596,15 @@
                   </div>
                 </div>
                 <p class="reviews__review">
-                  Хороший клуб, о после замены оборудования, были реальные автоматы, контроллеры на руках-ногах,
-                  и погружение было очень глубоким, теперь в руках джойстики, эффекта стрельбы почти нет, друзей в игре вечно дергает,
-                  перекашивает, ноги заплетаются(имею ввиду персонажи) стало не так интересно, игры про зомби уже устарели,
-                  пора обновлять ассортимент, тратишь 1 час- реально в игре 30 минут, это мало, хотя бы 45 сделали, цены то высокие,
-                  понимаю надо окупить оборудование, но хоть немного бы снизили....а так все нормально)
+                  Хороший клуб, о после замены оборудования, были реальные
+                  автоматы, контроллеры на руках-ногах, и погружение было очень
+                  глубоким, теперь в руках джойстики, эффекта стрельбы почти
+                  нет, друзей в игре вечно дергает, перекашивает, ноги
+                  заплетаются(имею ввиду персонажи) стало не так интересно, игры
+                  про зомби уже устарели, пора обновлять ассортимент, тратишь 1
+                  час- реально в игре 30 минут, это мало, хотя бы 45 сделали,
+                  цены то высокие, понимаю надо окупить оборудование, но хоть
+                  немного бы снизили....а так все нормально)
                 </p>
               </div>
             </div>
@@ -1379,7 +1616,7 @@
                     class="reviews__photo"
                     src="./images/reviews/person2.png"
                     alt="author of the review"
-                  >
+                  />
                   <div class="reviews__message">
                     <p class="bold reviews__name">Алиса Колычева</p>
                     <div class="reviews__stars reviews__stars--4">
@@ -1393,16 +1630,24 @@
                   </div>
                 </div>
                 <p class="reviews__review">
-                  Графика конечно приятная, картинки впечатляющие и эффект погружения есть.
-                  Но вообще-то в их рекламе первым пунктом большими буквами написано "оборудование full-body"
-                  - а нам надели шлем и вручили контроллеры в руки, и всё! Я специально выбирал виар с полным обмундированием,
-                  ради этого был готов переплатить, а получилось то же самое что у других, но за гораздо большие деньги.
-                  По телефону записывались на часовую игру, на месте оказалось, что получасовая. А на полчаса гораздо меньше выбор игр.
-                  Квест единственный. Сюжет простейший, тебе в явном виде говорят что делать, и ты это делаешь, никаких загадок или задач.
-                  В итоге получасовую игру мы прошли за 20 с небольшим минут. Возможно было бы лучше, если бы мы выбрали шутер,
-                   но нам больше нравятся квесты, и по их сайту мы были уверены, что квестов у них навалом.
-                   В общем как-то даже обидно, помещение большое, графика классная, эффект погружения неплохой, а игра простая и короткая.
-                   Вроде и прикольно, но за такие деньги и по их рекламе я ожидал гораздо большего.
+                  Графика конечно приятная, картинки впечатляющие и эффект
+                  погружения есть. Но вообще-то в их рекламе первым пунктом
+                  большими буквами написано "оборудование full-body" - а нам
+                  надели шлем и вручили контроллеры в руки, и всё! Я специально
+                  выбирал виар с полным обмундированием, ради этого был готов
+                  переплатить, а получилось то же самое что у других, но за
+                  гораздо большие деньги. По телефону записывались на часовую
+                  игру, на месте оказалось, что получасовая. А на полчаса
+                  гораздо меньше выбор игр. Квест единственный. Сюжет
+                  простейший, тебе в явном виде говорят что делать, и ты это
+                  делаешь, никаких загадок или задач. В итоге получасовую игру
+                  мы прошли за 20 с небольшим минут. Возможно было бы лучше,
+                  если бы мы выбрали шутер, но нам больше нравятся квесты, и по
+                  их сайту мы были уверены, что квестов у них навалом. В общем
+                  как-то даже обидно, помещение большое, графика классная,
+                  эффект погружения неплохой, а игра простая и короткая. Вроде и
+                  прикольно, но за такие деньги и по их рекламе я ожидал гораздо
+                  большего.
                 </p>
               </div>
             </div>
@@ -1414,7 +1659,7 @@
                     class="reviews__photo"
                     src="./images/reviews/person3.png"
                     alt="author of the review"
-                  >
+                  />
                   <div class="reviews__message">
                     <p class="bold reviews__name">Олег</p>
                     <div class="reviews__stars reviews__stars--4">
@@ -1428,9 +1673,10 @@
                   </div>
                 </div>
                 <p class="reviews__review">
-                  Место, где можно погрузиться в виртуальную реальность, были бы деньги.
-                  Есть зал поменьше, есть побольше. Можно, как вариант, сразиться с Зомби,
-                  поработать в сети быстрого питания, или половить мячи.
+                  Место, где можно погрузиться в виртуальную реальность, были бы
+                  деньги. Есть зал поменьше, есть побольше. Можно, как вариант,
+                  сразиться с Зомби, поработать в сети быстрого питания, или
+                  половить мячи.
                 </p>
               </div>
             </div>
@@ -1442,7 +1688,7 @@
                     class="reviews__photo"
                     src="./images/reviews/person4.png"
                     alt="author of the review"
-                  >
+                  />
                   <div class="reviews__message">
                     <p class="bold reviews__name">Amigo</p>
                     <div class="reviews__stars reviews__stars--5">
@@ -1457,7 +1703,8 @@
                 </div>
                 <p class="reviews__review">
                   С удовольствием поиграли. И просто хорошо провели время.
-                  Приветливый персонал и хорошая обстановка. К сожалению прошли почти все игры, а новые выходят не часто....
+                  Приветливый персонал и хорошая обстановка. К сожалению прошли
+                  почти все игры, а новые выходят не часто....
                 </p>
               </div>
             </div>
@@ -1470,7 +1717,6 @@
             <a href="#" class="link promotions__tickets">Все акции</a>
           </div>
           <div class="promotions__slider">
-
             <div class="promotions__content">
               <div class="promotions__content-item">
                 <p class="whiteText promotions__content-date">3 дня</p>
@@ -1478,43 +1724,34 @@
                   src="./images/promotion.jpg"
                   alt="girl playing VR"
                   class="promotions__img"
-                >
-                <h3 class="whiteText promotions__content-title">Турнир в подарок</h3>
-                <p class="whiteText promotions__content-paragraph">Купите билет в парк и получите 50% скидку на организацию турнира до конца месяца.</p>
+                />
+                <h3 class="whiteText promotions__content-title">
+                  Турнир в подарок
+                </h3>
+                <p class="whiteText promotions__content-paragraph">
+                  Купите билет в парк и получите 50% скидку на организацию
+                  турнира до конца месяца.
+                </p>
               </div>
-              <a href="#" class="whiteText link link--opacity link--promotions">Подробнее</a>
+              <a href="#" class="whiteText link link--opacity link--promotions"
+                >Подробнее</a
+              >
             </div>
 
             <div class="promotions__content">
               <div class="promotions__content-item">
                 <p class="whiteText promotions__content-date">3 дня</p>
-                <h3 class="whiteText promotions__content-title">Скидка 50% на игру City Z</h3>
-                <p class="whiteText promotions__content-paragraph">Купите билет в парк и получите 50% скидку на организацию турнира до конца месяца.</p>
+                <h3 class="whiteText promotions__content-title">
+                  Скидка 50% на игру City Z
+                </h3>
+                <p class="whiteText promotions__content-paragraph">
+                  Купите билет в парк и получите 50% скидку на организацию
+                  турнира до конца месяца.
+                </p>
               </div>
-              <a href="#" class="whiteText link link--opacity link--promotions">Подробнее</a>
-            </div>
-
-            <div class="promotions__content">
-              <div class="promotions__content-item">
-                <p class="whiteText promotions__content-date">3 дня</p>
-                <img
-                  src="./images/promotion.jpg"
-                  alt="girl playing VR"
-                  class="promotions__img"
-                >
-                <h3 class="whiteText promotions__content-title">Турнир в подарок</h3>
-                <p class="whiteText promotions__content-paragraph">Купите билет в парк и получите 50% скидку на организацию турнира до конца месяца.</p>
-              </div>
-              <a href="#" class="whiteText link link--opacity link--promotions">Подробнее</a>
-            </div>
-
-            <div class="promotions__content">
-              <div class="promotions__content-item">
-                <p class="whiteText promotions__content-date">3 дня</p>
-                <h3 class="whiteText promotions__content-title">Скидка 50% на игру City Z</h3>
-                <p class="whiteText promotions__content-paragraph">Купите билет в парк и получите 50% скидку на организацию турнира до конца месяца.</p>
-              </div>
-              <a href="#" class="whiteText link link--opacity link--promotions">Подробнее</a>
+              <a href="#" class="whiteText link link--opacity link--promotions"
+                >Подробнее</a
+              >
             </div>
 
             <div class="promotions__content">
@@ -1524,32 +1761,84 @@
                   src="./images/promotion.jpg"
                   alt="girl playing VR"
                   class="promotions__img"
-                >
-                <h3 class="whiteText promotions__content-title">Турнир в подарок</h3>
-                <p class="whiteText promotions__content-paragraph">Купите билет в парк и получите 50% скидку на организацию турнира до конца месяца.</p>
+                />
+                <h3 class="whiteText promotions__content-title">
+                  Турнир в подарок
+                </h3>
+                <p class="whiteText promotions__content-paragraph">
+                  Купите билет в парк и получите 50% скидку на организацию
+                  турнира до конца месяца.
+                </p>
               </div>
-              <a href="#" class="whiteText link link--opacity link--promotions">Подробнее</a>
+              <a href="#" class="whiteText link link--opacity link--promotions"
+                >Подробнее</a
+              >
             </div>
 
             <div class="promotions__content">
               <div class="promotions__content-item">
                 <p class="whiteText promotions__content-date">3 дня</p>
-                <h3 class="whiteText promotions__content-title">Скидка 50% на игру City Z</h3>
-                <p class="whiteText promotions__content-paragraph">Купите билет в парк и получите 50% скидку на организацию турнира до конца месяца.</p>
+                <h3 class="whiteText promotions__content-title">
+                  Скидка 50% на игру City Z
+                </h3>
+                <p class="whiteText promotions__content-paragraph">
+                  Купите билет в парк и получите 50% скидку на организацию
+                  турнира до конца месяца.
+                </p>
               </div>
-              <a href="#" class="whiteText link link--opacity link--promotions">Подробнее</a>
+              <a href="#" class="whiteText link link--opacity link--promotions"
+                >Подробнее</a
+              >
+            </div>
+
+            <div class="promotions__content">
+              <div class="promotions__content-item">
+                <p class="whiteText promotions__content-date">3 дня</p>
+                <img
+                  src="./images/promotion.jpg"
+                  alt="girl playing VR"
+                  class="promotions__img"
+                />
+                <h3 class="whiteText promotions__content-title">
+                  Турнир в подарок
+                </h3>
+                <p class="whiteText promotions__content-paragraph">
+                  Купите билет в парк и получите 50% скидку на организацию
+                  турнира до конца месяца.
+                </p>
+              </div>
+              <a href="#" class="whiteText link link--opacity link--promotions"
+                >Подробнее</a
+              >
+            </div>
+
+            <div class="promotions__content">
+              <div class="promotions__content-item">
+                <p class="whiteText promotions__content-date">3 дня</p>
+                <h3 class="whiteText promotions__content-title">
+                  Скидка 50% на игру City Z
+                </h3>
+                <p class="whiteText promotions__content-paragraph">
+                  Купите билет в парк и получите 50% скидку на организацию
+                  турнира до конца месяца.
+                </p>
+              </div>
+              <a href="#" class="whiteText link link--opacity link--promotions"
+                >Подробнее</a
+              >
             </div>
           </div>
         </section>
 
         <section class="questions">
-
           <div class="questions__content">
             <div class="questions__text">
               <h2 class="questions__title">Остались вопросы?</h2>
-              <p class="questions__paragraph">Задайте вопрос нашему менеджеру Виктории</p>
+              <p class="questions__paragraph">
+                Задайте вопрос нашему менеджеру Виктории
+              </p>
             </div>
-            
+
             <div class="questions__telephone">
               <p class="bold">Или позвоните по номеру</p>
               <a
@@ -1566,7 +1855,7 @@
             src="./images/girl.png"
             alt="Girl in VR equipment"
             class="questions__img"
-          >
+          />
 
           <form action="#" class="questions__form">
             <h3>Задать вопрос</h3>
@@ -1576,7 +1865,7 @@
               placeholder="Телефон"
               class="questions__input"
               id="tel"
-            >
+            />
             <textarea
               name="message"
               id="message"
@@ -1585,16 +1874,15 @@
               placeholder="Ваш вопрос"
               class="questions__textarea"
             ></textarea>
-            <button
-              type="submit"
-              class="link link--second questions__button"
-            >
+            <button type="submit" class="link link--second questions__button">
               Отправить
             </button>
 
             <p class="questions__agreement">
               Нажимая на кнопку вы соглашаетесь с
-              <a href="#" class="questions__link">условиями пользовательского соглашения</a>
+              <a href="#" class="questions__link"
+                >условиями пользовательского соглашения</a
+              >
             </p>
           </form>
         </section>
@@ -1605,7 +1893,6 @@
             <a href="#" class="link news__tickets">Все новости</a>
           </div>
           <div class="news__slider">
-
             <div class="news__content">
               <div class="news__content-item">
                 <p class="news__content-date">21 апреля 2022</p>
@@ -1613,13 +1900,14 @@
                   src="./images/news/news1.jpg"
                   alt="game screenshot"
                   class="news__img"
-                >
+                />
                 <h3 class="news__content-title">Мы выпустили новую игру</h3>
                 <p class="news__content-paragraph">
-                  Хороший клуб, о после замены оборудования, были реальные автоматы,
-                  контроллеры на руках-ногах, и погружение было очень глубоким,
-                  теперь в руках джойстики, эффекта стрельбы почти нет,
-                  друзей в игре вечно дергает, перекашивает, ноги заплетаются.
+                  Хороший клуб, о после замены оборудования, были реальные
+                  автоматы, контроллеры на руках-ногах, и погружение было очень
+                  глубоким, теперь в руках джойстики, эффекта стрельбы почти
+                  нет, друзей в игре вечно дергает, перекашивает, ноги
+                  заплетаются.
                 </p>
               </div>
               <a href="#" class="link news__link">Подробнее</a>
@@ -1630,10 +1918,11 @@
                 <p class="news__content-date">21 апреля 2022</p>
                 <h3 class="news__content-title">Мы выпустили новую игру</h3>
                 <p class="news__content-paragraph">
-                  Хороший клуб, о после замены оборудования, были реальные автоматы,
-                  контроллеры на руках-ногах, и погружение было очень глубоким,
-                  теперь в руках джойстики, эффекта стрельбы почти нет,
-                  друзей в игре вечно дергает, перекашивает, ноги заплетаются.
+                  Хороший клуб, о после замены оборудования, были реальные
+                  автоматы, контроллеры на руках-ногах, и погружение было очень
+                  глубоким, теперь в руках джойстики, эффекта стрельбы почти
+                  нет, друзей в игре вечно дергает, перекашивает, ноги
+                  заплетаются.
                 </p>
               </div>
               <a href="#" class="link news__link">Подробнее</a>
@@ -1646,11 +1935,12 @@
                   src="./images/news/news2.jpg"
                   alt="game screenshot"
                   class="news__img"
-                >
+                />
                 <h3 class="news__content-title">Мы выпустили новую игру</h3>
                 <p class="news__content-paragraph">
-                  Хороший клуб, о после замены оборудования, были реальные автоматы,
-                  контроллеры на руках-ногах, и погружение было очень глубоким.
+                  Хороший клуб, о после замены оборудования, были реальные
+                  автоматы, контроллеры на руках-ногах, и погружение было очень
+                  глубоким.
                 </p>
               </div>
               <a href="#" class="link news__link">Подробнее</a>
@@ -1663,13 +1953,14 @@
                   src="./images/news/news1.jpg"
                   alt="game screenshot"
                   class="news__img"
-                >
+                />
                 <h3 class="news__content-title">Мы выпустили новую игру</h3>
                 <p class="news__content-paragraph">
-                  Хороший клуб, о после замены оборудования, были реальные автоматы,
-                  контроллеры на руках-ногах, и погружение было очень глубоким,
-                  теперь в руках джойстики, эффекта стрельбы почти нет,
-                  друзей в игре вечно дергает, перекашивает, ноги заплетаются.
+                  Хороший клуб, о после замены оборудования, были реальные
+                  автоматы, контроллеры на руках-ногах, и погружение было очень
+                  глубоким, теперь в руках джойстики, эффекта стрельбы почти
+                  нет, друзей в игре вечно дергает, перекашивает, ноги
+                  заплетаются.
                 </p>
               </div>
               <a href="#" class="link news__link">Подробнее</a>
@@ -1680,10 +1971,11 @@
                 <p class="news__content-date">21 апреля 2022</p>
                 <h3 class="news__content-title">Мы выпустили новую игру</h3>
                 <p class="news__content-paragraph">
-                  Хороший клуб, о после замены оборудования, были реальные автоматы,
-                  контроллеры на руках-ногах, и погружение было очень глубоким,
-                  теперь в руках джойстики, эффекта стрельбы почти нет,
-                  друзей в игре вечно дергает, перекашивает, ноги заплетаются.
+                  Хороший клуб, о после замены оборудования, были реальные
+                  автоматы, контроллеры на руках-ногах, и погружение было очень
+                  глубоким, теперь в руках джойстики, эффекта стрельбы почти
+                  нет, друзей в игре вечно дергает, перекашивает, ноги
+                  заплетаются.
                 </p>
               </div>
               <a href="#" class="link news__link">Подробнее</a>
@@ -1696,22 +1988,21 @@
                   src="./images/news/news2.jpg"
                   alt="game screenshot"
                   class="news__img"
-                >
+                />
                 <h3 class="news__content-title">Мы выпустили новую игру</h3>
                 <p class="news__content-paragraph">
-                  Хороший клуб, о после замены оборудования, были реальные автоматы,
-                  контроллеры на руках-ногах, и погружение было очень глубоким.
+                  Хороший клуб, о после замены оборудования, были реальные
+                  автоматы, контроллеры на руках-ногах, и погружение было очень
+                  глубоким.
                 </p>
               </div>
               <a href="#" class="link news__link">Подробнее</a>
             </div>
-
           </div>
         </section>
 
         <section class="coupons">
           <div class="coupons__slider">
-
             <div class="coupons__content">
               <div class="coupons__content-item">
                 <div class="discount">
@@ -1727,7 +2018,9 @@
                 <div class="discount discount--party">
                   <p class="bold">День рождения</p>
                   <p>от 1490 ₴</p>
-                  <a href="#" class="link link--opacity">рассчитать стоимость</a>
+                  <a href="#" class="link link--opacity"
+                    >рассчитать стоимость</a
+                  >
                 </div>
               </div>
             </div>
@@ -1757,7 +2050,9 @@
                 <div class="discount discount--party">
                   <p class="bold">День рождения</p>
                   <p>от 1490 ₴</p>
-                  <a href="#" class="link link--opacity">рассчитать стоимость</a>
+                  <a href="#" class="link link--opacity"
+                    >рассчитать стоимость</a
+                  >
                 </div>
               </div>
             </div>
@@ -1771,7 +2066,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -1782,18 +2076,18 @@
                 src="./images/logo.svg"
                 alt="Anvio company Logo"
                 class="footer__logo"
-              >
+              />
             </a>
             <img
               src="./images/location.jpg"
               alt="Cosmo Multimal geolocation"
               class="footer__location"
-            >
+            />
             <div class="footer__adress">
               <p class="footer__subtitle">Наш адрес</p>
               <p class="whiteText">
-                Киев, ул. Вадима Гетьмана, 6, ТРЦ Cosmo Multimall,
-                Блок A, 2-ой этаж
+                Киев, ул. Вадима Гетьмана, 6, ТРЦ Cosmo Multimall, Блок A, 2-ой
+                этаж
               </p>
               <p class="whiteText metro footer__metro">Шулявська — 400м</p>
             </div>
@@ -1801,23 +2095,32 @@
             <div class="footer__links">
               <p class="footer__subtitle">оставьте заявку прямо сейчас!</p>
               <a href="#" class="link link--second">Купить билет</a>
-              <a href="#" class="link link--opacity link--opacity--footer">Заказать праздник</a>
+              <a href="#" class="link link--opacity link--opacity--footer"
+                >Заказать праздник</a
+              >
             </div>
 
             <div class="footer__telephone">
               <p class="footer__subtitle">Телефон</p>
-              <a href="tel:380672963030" class="whiteText" target="_blank">+38 (067) 296-30-30</a>
+              <a href="tel:380672963030" class="whiteText" target="_blank"
+                >+38 (067) 296-30-30</a
+              >
             </div>
 
             <div class="footer__mail">
               <p class="footer__subtitle">Почта</p>
-              <a href="mailto:info@anviovr.com" class="whiteText" target="_blank">info@anviovr.com</a>
+              <a
+                href="mailto:info@anviovr.com"
+                class="whiteText"
+                target="_blank"
+                >info@anviovr.com</a
+              >
             </div>
 
             <div class="footer__info">
-              <hr>
+              <hr />
               <a href="" class="whiteText footer__link">Акции и новости</a>
-              <hr>
+              <hr />
               <ul class="footer__list">
                 <li class="footer__item">
                   <a href="#" class="footer__link whiteText">Развлечения</a>
@@ -1829,44 +2132,62 @@
                   <a href="#" class="footer__link footer__link--grey">Куб</a>
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link footer__link--grey">Аттракционы</a>
+                  <a href="#" class="footer__link footer__link--grey"
+                    >Аттракционы</a
+                  >
                 </li>
                 <li class="footer__item">
                   <a href="#" class="footer__link footer__link--grey">Стенды</a>
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link footer__link--grey">PvP-соревнования</a>
+                  <a href="#" class="footer__link footer__link--grey"
+                    >PvP-соревнования</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link footer__link--grey">Билет в парк</a>
+                  <a href="#" class="footer__link footer__link--grey"
+                    >Билет в парк</a
+                  >
                 </li>
               </ul>
-              <hr>
+              <hr />
               <a href="" class="whiteText footer__link">Контакты</a>
-              <hr>
+              <hr />
               <a href="" class="whiteText footer__link">Сертификаты</a>
-              <hr>
+              <hr />
               <ul class="footer__list">
                 <li class="footer__item">
                   <a href="#" class="footer__link whiteText">Праздники</a>
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link footer__link--grey">День рождения</a>
+                  <a href="#" class="footer__link footer__link--grey"
+                    >День рождения</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link footer__link--grey">Детский день рождения</a>
+                  <a href="#" class="footer__link footer__link--grey"
+                    >Детский день рождения</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link footer__link--grey">Корпоратив</a>
+                  <a href="#" class="footer__link footer__link--grey"
+                    >Корпоратив</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link footer__link--grey">Нестандартное мероприятие</a>
+                  <a href="#" class="footer__link footer__link--grey"
+                    >Нестандартное мероприятие</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link footer__link--grey">PvP-соревнования</a>
+                  <a href="#" class="footer__link footer__link--grey"
+                    >PvP-соревнования</a
+                  >
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link footer__link--grey">Билет в парк</a>
+                  <a href="#" class="footer__link footer__link--grey"
+                    >Билет в парк</a
+                  >
                 </li>
               </ul>
             </div>
@@ -1925,20 +2246,25 @@
             <div class="footer__subscribe">
               <form action="#">
                 <label for="subscribe"></label>
-                <input type="email" name="subscribe" id="subscribe" placeholder="Введите ваш E-mail адрес">
-                <button type="submit" class="link link--second">Подписаться</button>
+                <input
+                  type="email"
+                  name="subscribe"
+                  id="subscribe"
+                  placeholder="Введите ваш E-mail адрес"
+                />
+                <button type="submit" class="link link--second">
+                  Подписаться
+                </button>
               </form>
-              
             </div>
-
           </div>
         </section>
       </div>
     </main>
     <footer></footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./scripts/slick.min.js"></script>
-    <script src="./scripts/main.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./scripts/slick.min.js"></script>
+    <script src="./scripts/main.js"></script> -->
   </body>
 </html>

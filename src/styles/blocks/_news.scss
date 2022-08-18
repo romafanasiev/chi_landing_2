@@ -35,6 +35,15 @@
 
   &__slider {
     display: flex;
+
+    & .slick-slide {
+      margin: 0 10px;
+      width: 260px;
+
+      @include onDesktop {
+        width: 440px;
+      }
+    }
   }
 
   &__content {
@@ -44,6 +53,7 @@
     margin: 0 5px;
     padding: 30px;
 
+    min-height: 620px;
     width: 250px;
 
     background-color: $whiteColor;

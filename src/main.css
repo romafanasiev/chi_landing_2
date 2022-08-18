@@ -1697,11 +1697,23 @@ a {
 .promotions__slider {
   display: flex;
 }
+.promotions__slider .slick-slide {
+  margin: 0 10px;
+  width: 250px;
+}
+@media (min-width: 1480px) {
+  .promotions__slider .slick-slide {
+    width: 400px;
+    height: 580px;
+  }
+}
 .promotions__content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 0 5px;
   padding: 30px;
+  min-height: 580px;
   width: 250px;
   background-color: #ce2127;
   border-radius: 30px;
@@ -1714,7 +1726,6 @@ a {
 }
 .promotions__content-item {
   position: relative;
-  height: 100%;
 }
 .promotions__content-date {
   padding: 0 0 10px;
@@ -1759,6 +1770,15 @@ a {
 .reviews__slider .slick-list {
   overflow: visible;
 }
+.reviews__slider .slick-slide {
+  margin: 0 10px;
+  width: 260px;
+}
+@media (min-width: 1480px) {
+  .reviews__slider .slick-slide {
+    width: 440px;
+  }
+}
 .reviews__content {
   display: flex;
   flex-direction: column;
@@ -1795,7 +1815,12 @@ a {
   padding: 10px 0 0;
   height: 160px;
   overflow: hidden;
-  -webkit-mask: linear-gradient(to bottom, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 10%,
+    rgb(0, 0, 0) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 .reviews__photo {
   height: 50px;
@@ -1838,23 +1863,23 @@ a {
   line-height: 17px;
 }
 
-.reviews__stars--1 :nth-child(-n+1) {
+.reviews__stars--1 :nth-child(-n + 1) {
   background-image: url("./images/reviews/starActive.png");
 }
 
-.reviews__stars--2 :nth-child(-n+2) {
+.reviews__stars--2 :nth-child(-n + 2) {
   background-image: url("./images/reviews/starActive.png");
 }
 
-.reviews__stars--3 :nth-child(-n+3) {
+.reviews__stars--3 :nth-child(-n + 3) {
   background-image: url("./images/reviews/starActive.png");
 }
 
-.reviews__stars--4 :nth-child(-n+4) {
+.reviews__stars--4 :nth-child(-n + 4) {
   background-image: url("./images/reviews/starActive.png");
 }
 
-.reviews__stars--5 :nth-child(-n+5) {
+.reviews__stars--5 :nth-child(-n + 5) {
   background-image: url("./images/reviews/starActive.png");
 }
 
@@ -1894,11 +1919,21 @@ a {
 .news__slider {
   display: flex;
 }
+.news__slider .slick-slide {
+  margin: 0 10px;
+  width: 260px;
+}
+@media (min-width: 1480px) {
+  .news__slider .slick-slide {
+    width: 440px;
+  }
+}
 .news__content {
   display: flex;
   flex-direction: column;
   margin: 0 5px;
   padding: 30px;
+  min-height: 620px;
   width: 250px;
   background-color: #fff;
   border-radius: 30px;
