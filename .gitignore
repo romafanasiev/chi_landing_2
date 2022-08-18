@@ -1,2 +1,8 @@
 node_modules
 .sass-cache
+dist
+webpack.dev.config.js
+webpack.production.config.js
+.prettierignore
+.prettierrc.json
+.eslintrc.json

@@ -1,8 +1,17 @@
 .socials {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 
   width: 100%;
+
+  &--footer {
+    justify-content: center;
+
+    @include onDesktop {
+      justify-content: flex-start;
+    }
+  }
 
   &__item {
     height: 30px;
@@ -14,6 +23,13 @@
     border-radius: 10px;
 
     cursor: pointer;
+
+    &--footer {
+      @include onDesktop {
+        height: 60px;
+        width: 60px;
+      }
+    }
 
     &--telegram {
       background-image: url("./images/icons/telegram.svg");
